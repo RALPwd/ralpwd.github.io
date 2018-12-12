@@ -206,7 +206,7 @@ img {
 .social-icons-header .fa-twitter {
   color: #fff; }
 
-.social-icons-header .fa-google-plus {
+.social-icons-header .fa-instagram {
   color: #fff; }
 
 .social-icons-header .fa-linkedin {
@@ -2287,11 +2287,11 @@ form label.error {
   background: #1da1f2;
   color: #fff; }
 
-.first-footer .netsocials a .fa-google-plus {
+.first-footer .netsocials a .fa-instagram {
   background: transparent;
   color: #fff; }
 
-.first-footer .netsocials a .fa-google-plus:hover {
+.first-footer .netsocials a .fa-instagram:hover {
   background: #dd4b39;
   color: #fff; }
 
@@ -4253,7 +4253,7 @@ select {
   background: #1da1f2;
   color: #fff; }
 
-.inner-pages .recent-post .netsocials a .fa-google-plus {
+.inner-pages .recent-post .netsocials a .fa-instagram {
   background: #dd4b39;
   color: #fff; }
 
@@ -4443,7 +4443,7 @@ select {
   background: #1da1f2;
   color: #fff; }
 
-.inner-pages .recent-post .netsocials a .fa-google-plus {
+.inner-pages .recent-post .netsocials a .fa-instagram {
   background: #dd4b39;
   color: #fff; }
 
@@ -4497,7 +4497,7 @@ select {
 .inner-pages .social-share .fa-twitter {
   color: #1da1f2; }
 
-.inner-pages .social-share .fa-google-plus {
+.inner-pages .social-share .fa-instagram {
   color: #dd4b39; }
 
 .inner-pages .social-share .fa-youtube {
