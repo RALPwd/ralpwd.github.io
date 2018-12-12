@@ -7,6 +7,8 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="description" content="html 5 template">
 	<meta name="author" content="">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Propiedad Horizontal</title>
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -25,14 +27,35 @@
 	<link rel="stylesheet" href="css\owl.carousel.min.css">
 	<link rel="stylesheet" href="css\bootstrap.css">
 	<link rel="stylesheet" href="css\styles.css">
+	<link rel="stylesheet" href="css\menu.css" type="text/css" />
 </head>
 
 <body>
-	<!-- START SECTION HEADINGS -->
+<ul class="nav-mobile">
+         
+  <li class="menu-container"> 
+         <input id="menu-toggle" type="checkbox">
+    <label for="menu-toggle" class="menu-button">  
+      <svg class="icon-open" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg class="icon-close" viewBox="0 0 100 100">
+        <path d="M83.288 88.13c-2.114 2.112-5.575 2.112-7.69 0L53.66 66.188c-2.113-2.112-5.572-2.112-7.686 0l-21.72 21.72c-2.114 2.113-5.572 2.113-7.687 0l-4.693-4.692c-2.114-2.114-2.114-5.573 0-7.688l21.72-21.72c2.112-2.115 2.112-5.574 0-7.687L11.87 24.4c-2.114-2.113-2.114-5.57 0-7.686l4.842-4.842c2.113-2.114 5.57-2.114 7.686 0l21.72 21.72c2.114 2.113 5.572 2.113 7.688 0l21.72-21.72c2.115-2.114 5.574-2.114 7.688 0l4.695 4.695c2.112 2.113 2.112 5.57-.002 7.686l-21.72 21.72c-2.112 2.114-2.112 5.573 0 7.686L88.13 75.6c2.112 2.11 2.112 5.572 0 7.687l-4.842 4.84z"/>
+      </svg> 
+    </label> 
+    <ul class="menu-sidebar">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proveedores">Proveedores</a></li>
+      <li><a href="#copropiedad">Copropiedades</a></li>
+      <li><a href="#contacto">contacto</a></li>
+    </ul> 
+  </li>
+</ul>
+		<!-- START SECTION HEADINGS -->
 	<div class="header">
 		<div class="header-top">
 			<div class="container">
-				<div class="top-info hidden-sm-down">
+								<div class="top-info hidden-sm-down">
 					<div class="call-header">
 						<p><i class="fa fa-phone" aria-hidden="true"></i> (+57) 318 887 0525</p>
 					</div>
@@ -46,117 +69,16 @@
 				<div class="top-social hidden-sm-down">
 					<div class="social-icons-header">
 						<div class="social-icons">
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com/Gestión-Integral-PH-292206234756409" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							<a href="#"><i class="fa fa fa-linkedin" aria-hidden="true"></i></a>
-							<!--<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>-->
+							<a href="https://www.instagram.com/gestion_integral_ph/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="header-bottom heading sticky-header" id="heading">
-			<div class="container">
-				<!-- STAR MOBILE LOGO -->
-				<a href="index.html" class="logo">
-					<img src="images\LOGO-GI.png" alt="businesspro">
-				</a>
-				<!-- END MOBILE LOGO -->
-				<div class="get-quote hidden-lg-down">
-					<a data-scroll="" href="#quote">
-						<p>Get a Quote</p>
-					</a>
-				</div>
-				<button type="button" class="search-button" data-toggle="collapse" data-target="#bloq-search" aria-expanded="false">
-					<i class="fa fa-search" aria-hidden="true"></i>
-				</button>
-				<button type="button" class="button-menu hidden-lg-up" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</button>
-
-				<form action="#" id="bloq-search" class="collapse">
-					<div class="bloq-search">
-						<input type="text" placeholder="search...">
-						<input type="submit" value="Search">
-					</div>
-				</form>
-
-				<nav id="main-menu" class="collapse">
-					<ul>
-						<!-- STAR COLLAPSE MOBILE MENU -->
-						<li class="hidden-lg-up">
-							<div class="po">
-								<a data-toggle="collapse" href="#home" aria-expanded="false">Inicio</a>
-							</div>
-							<div class="collapse" id="home">
-								<div class="card card-block">
-									<a class="dropdown-item" href="index.html">Home One</a>
-									<a class="dropdown-item" href="index-2.html">Home Two</a>
-								</div>
-							</div>
-						</li>
-						<!-- END COLLAPSE MOBILE MENU -->
-						<li class="dropdown hidden-md-down">
-							<a class="active dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Inicio</a>
-							
-						</li>
-						<!-- STAR COLLAPSE MOBILE MENU -->
-						<li class="hidden-lg-up">
-							<div class="po">
-								<a data-toggle="collapse" href="#about" aria-expanded="false">Quiénes Somos</a>
-							</div>
-							<div class="collapse" id="about">
-								
-							</div>
-						</li>
-						<!-- END COLLAPSE MOBILE MENU -->
-						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Quiénes Somos</a>
-							
-						</li>
-						<!-- STAR COLLAPSE MOBILE MENU -->
-						<li class="hidden-lg-up">
-							<div class="po">
-								<a data-toggle="collapse" href="#services" aria-expanded="false">Servicios</a>
-							</div>
-							
-						</li>
-						<!-- END COLLAPSE MOBILE MENU -->
-						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Servicios</a>
-							
-						</li>
-						<!-- STAR COLLAPSE MOBILE MENU -->
-						<li class="hidden-lg-up">
-							<div class="po">
-								<a data-toggle="collapse" href="#projects" aria-expanded="false">Proveedores</a>
-							</div>
-							
-						</li>
-						<!-- END COLLAPSE MOBILE MENU -->
-						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Proveedores</a>
-							
-						</li>
-						<!-- STAR COLLAPSE MOBILE MENU -->
-						<li class="hidden-lg-up">
-							<div class="po">
-								<a data-toggle="collapse" href="#blog-section" aria-expanded="false">Copropiedades</a>
-							</div>
-							<div class="collapse" id="blog">
-								
-							</div>
-						</li>
-						<!-- END COLLAPSE MOBILE MENU -->
-						<li class="dropdown hidden-md-down">
-							<a  aria-haspopup="true" aria-expanded="false" href="#blog-section">Copropiedades</a>
-						
-						</li>
-						<li><a href="#quote">Contacto</a></li>
-					</ul>
-				</nav>
-			</div>
+			</div>	<a href="#" class="logoPH">
+					<div class="logoPH"><center><img src="images\LOGO-GI.png" width="20%" height="auto" alt="businesspro">
+				</a></center></div>
 		</div>
 	</div>
 
@@ -237,13 +159,13 @@
 	<!-- END SECTION HEADINGS -->
 
 	<!-- START SECTION INFO -->
-	<section class="info-about text-center">
+	<section class="info-about text-center" id="#nosotros">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 cell cel-1">
 					<img src="images\info\img-1.png" width="70" alt="">
 					<h3>¿Quiénes Somos?</h3>
-					<p>Gestión Integral de Propiedad Horizontal SAS es una empresa de administración de propiedad horizontal destinada a uso comercial fundada en el 2006 en Bogotá. Ofrecemos un servicio bajo los pilares de Honestidad, Gestión, Compromiso e Innovación.</p>
+					<p>Gestión Integral de Propiedad Horizontal SAS es una empresa de administración de propiedad horizontal destinada a uso profesional fundada en el 2006 en Bogotá. Ofrecemos un servicio bajo los pilares de Honestidad, Gestión, Compromiso e Innovación.</p>
 					<div class="inf-btn">
 						
 					</div>
@@ -259,7 +181,7 @@
 				<div class="col-lg-3 col-md-6 cell cel-3">
 					<img src="images\info\img-3.png" width="70" alt="">
 					<h3>Visión</h3>
-					<p>Ser reconocidos como la mas confiable opción de Administración de Copropiedades de uso comercial en Colombia donde los clientes tienen la garantía de que sus recursos están en las mejores manos.</p>
+					<p>Ser reconocidos como la mas confiable opción de Administración de Copropiedades de uso profesional en Colombia donde los clientes tienen la garantía de que sus recursos están en las mejores manos.</p>
 					<div class="inf-btn">
 						
 					</div>
@@ -267,7 +189,13 @@
 				<div class="col-lg-3 col-md-6 cell cel-4">
 					<img src="images\info\img-4.png" width="70" alt="">
 					<h3>Valores</h3>
-					<p>Trabajamos cada día enmarcados en los valores de transparencia, comunicación efectiva y la ejecución integral, eficaz y oportuna para de esta forma alcanzar los resultados de gestión estipulados en cada copropiedad.</p>
+					<ul>
+<li style="text-align: left;" data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><strong><em>Transparencia de gesti&oacute;n</em></strong></li>
+<li style="text-align: left;" data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><strong><em>Comunicaci&oacute;n efectiva</em></strong><span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li style="text-align: left;" data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><strong><em>Ejecuci&oacute;n integral, eficaz y oportuna</em></strong></li>
+</ul> <div class="box bg-2">
+						<a href="#nosotros" class="btn btn-primary btn-lg">Ver Más...</a>
+					</div>
 					<div class="inf-btn">
 						
 					</div>
@@ -283,31 +211,21 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-12 who-1">
 					<div>
+						<h2 class="text-left mb-4">Transparencia <span>de Gestión</span></h2>
+					</div>
+					<div class="pftext">
+						<p>Brindamos a nuestros clientes la tranquilidad de que todos nuestros procesos son visibles, transparentes y confiables. Cada contratación es justa y la disposición de los recursos está sustentada siempre en las priridades de la copropiedad.</p>
+						<h2 class="text-left mb-4">Ejecución integral, <span>eficaz y oportuna</span></h2>
+						<p class="mb-4">Somos una empresa autónoma con experiencia en el sector, ejecutamos nuestros proyectos de forma oportuna haciendo el mejor uso de los recursos. Proclamamos ser efectivos desde la primera vez.</p>
+						</div>
+						
+				</div>
+				<div class="col-lg-6 col-md-12 col-xs-12">
+					<div>
 						<h2 class="text-left mb-4">Comunicación <span>Efectiva</span></h2>
 					</div>
 					<div class="pftext">
 						<p>Reconocemos la comunicación como un valor indispensable en el negocio de la gestión de copropiedades. Contamos con canales de comunicación abiertos donde estamos siempre dispuestos a recibir observaciones por parte de nuestros clientes, proveedores y colaboradores. Somos accesibles y brindamos respuestas.</p>
-<h2 class="text-left mb-4">Ejecución integral, <span>eficaz y oportuna</span></h2>
-						<p class="mb-4">Somos una empresa autónoma con experiencia en el sector, ejecutamos nuestros proyectos de forma oportuna haciendo el mejor uso de los recursos. Proclamamos ser efectivos desde la primera vez.</p>
-
-						
-					</div>
-					<!--<div class="box bg-2">
-						<a href="about.html" class="btn btn-primary btn-lg">Learn More...</a>
-					</div>-->
-				</div>
-				<div class="col-lg-6 col-md-12 col-xs-12">
-					<div class="wprt-image-video w50">
-						<img alt="image" src="images\bg\bg-video.jpeg">
-						<a class="icon-wrap popup-video popup-youtube" href="https://www.youtube.com/watch?v=2xHQqYRcrx4">
-							<i class="fa fa-play"></i>
-						</a>
-						<div class="iq-waves">
-							<div class="waves wave-1"></div>
-							<div class="waves wave-2"></div>
-							<div class="waves wave-3"></div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -315,41 +233,53 @@
 	<!-- END SECTION WELCOME -->
 
 	<!-- START WHAT WE OFFER -->
-	<section class="choosing">
+	<section class="choosing" id="#servicios">
 		<div class="container">
 			<div class="sec-title">
 				<h2><span>Nuestros </span>Servicios</h2>
 							</div>
 			<div class="row">
-				<div class="col-lg-4 col-md-12 cons hovblue hover-effect">
+				<div class="col-lg-3 col-md-6 cell cel-1">
 					<div class="offer-inner">
 						<div class="offer-img" style="background-image: url('images/info/in-1.jpeg'); background-size: cover; background-position: center center;">
 						</div>
 						<div class="offer-details">
 							<h3><a href="services-details.html">Administración <span><i class="fa fa-bar-chart"></i></span></a></h3>
-							<p>Administración integral de copropiedades de indole comercial</p>
+							<p>Administración integral de copropiedades de indole comercial...</p><center><a href="about.html" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#administracion">Ver Más</a></center>
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-12 cons hovblue hover-effect">
+				<div class="col-lg-3 col-md-6 cell cel-1">
 					<div class="offer-inner">
 						<div class="offer-img" style="background-image: url('images/info/in-2.jpeg'); background-size: cover; background-position: center center;">
 						</div>
 						<div class="offer-details">
 							<h3><a href="services-details.html">Asesoría <span><i class="fa fa-pie-chart"></i></span></a></h3>
-							<p>Recepción de Zonas Comunes y documentación de parte del constructor para montaje de la administración en copropiedades</p>
+							<p>Recepción de Zonas Comunes y documentación de parte del constructor...</p><center><a href="about.html" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#asesoria">Ver Más</a></center>
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-12 hovblue hover-effect">
+					<div class="col-lg-3 col-md-6 cell cel-1">
+					<div class="offer-inner">
+						<div class="offer-img" style="background-image: url('images/info/in-1.jpeg'); background-size: cover; background-position: center center;">
+						</div>
+						<div class="offer-details">
+							<h3><a href="services-details.html">Prestación de servicios asociados <span><i class="fa fa-bar-chart"></i></span></a></h3>
+							<p>Suministramos servicios puntuales o permanentes...</p><center><a href="about.html" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#prestacion">Ver Más</a></center>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 cell cel-1">
 					<div class="offer-inner">
 						<div class="offer-img" style="background-image: url('images/info/in-6.jpeg'); background-size: cover; background-position: center center;">
 						</div>
 						<div class="offer-details">
 							<h3><a href="offer-details.html">Auditoría <span><i class="fa fa-line-chart"></i></span></a></h3>
-							<p>Acompañamiento a los propietarios en procesos de auditoría y revisión de procesos de sus actuales contratistas de administración.</p>
+							<p>Acompañamiento a los propietarios en procesos de auditoría...</p>
+							<center><a href="about.html" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#auditoria">Ver Más</a></center>
 							
 						</div>
 					</div>
@@ -360,7 +290,7 @@
 	<!-- END START WHAT WE OFFER -->
 
 	<!-- START SECTION PROJECTS -->
-	<section class="portfolio">
+	<section class="portfolio" id="proveedores">
 		<div class="container-fluid">
 			<div class="head-project">
 				<div class="sec-title project">
@@ -368,7 +298,7 @@
 					<p>Permítanos conocer sus servicios.</p>
 				</div>
 				<div class="inf-btn pro">
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdmLsXiLLl7pHDbUEuYP92vtIZvgAH6_Xp39sxK95cCgmBA2Q/viewform?usp=sf_link" class="btn btn-pro btn-secondary btn-lg">Ingrese Aquí</a>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdmLsXiLLl7pHDbUEuYP92vtIZvgAH6_Xp39sxK95cCgmBA2Q/viewform?usp=sf_link" target="_blank" class="btn btn-pro btn-secondary btn-lg">Regístrese Aquí</a>
 				</div>
 			</div>
 			<div class="row portfolio-items">
@@ -441,359 +371,16 @@
 	</section>
 	<!-- END SECTION PROJECTS -->
 
-	<!-- START SECTION TEAM -->
-	<section class="team">
-		<div class="container">
-			<div class="sec-title">
-				<h2><span>Our </span>Experts</h2>
-				<p>Ofrecemos un servicio bajo los pilares de Honestidad, Gestión, Compromiso e Innovación, brindando siempre atención oportuna y cercana a nuestros clientes.</p>
-			</div>
-			<div class="row team-all">
-				<!--Team Block-->
-				<div class="team-block col-lg-3 col-md-6 col-xs-12">
-					<div class="inner-box team-details">
-						<div class="image team-head">
-							<a href="our-team.html"><img src="images\team\team-1.jpeg" alt=""></a>
-							<div class="team-hover">
-								<ul class="team-social">
-									<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="lower-box">
-							<h3><a href="our-team.html">Arling Tracy</a></h3>
-							<div class="designation">Acountant</div>
-						</div>
-					</div>
-				</div>
-				<!--Team Block-->
-				<div class="team-block col-lg-3 col-md-6 col-xs-12">
-					<div class="inner-box team-details">
-						<div class="image team-head">
-							<a href="our-team.html"><img src="images\team\team-2.jpeg" alt=""></a>
-							<div class="team-hover">
-								<ul class="team-social">
-									<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="lower-box">
-							<h3><a href="our-team.html">Carls Jhons</a></h3>
-							<div class="designation">Financial Advisor</div>
-						</div>
-					</div>
-				</div>
-				<!--Team Block-->
-				<div class="team-block col-lg-3 col-md-6 col-xs-12 pb-none">
-					<div class="inner-box team-details">
-						<div class="image team-head">
-							<a href="our-team.html"><img src="images\team\team-3.jpeg" alt=""></a>
-							<div class="team-hover">
-								<ul class="team-social">
-									<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="lower-box">
-							<h3><a href="our-team.html">Katy Grace</a></h3>
-							<div class="designation">Team Leader</div>
-						</div>
-					</div>
-				</div>
-				<!--Team Block-->
-				<div class="team-block col-lg-3 col-md-6 col-xs-12 pb-none">
-					<div class="inner-box team-details">
-						<div class="image team-head">
-							<a href="our-team.html"><img src="images\team\team-4.jpeg" alt=""></a>
-							<div class="team-hover">
-								<ul class="team-social">
-									<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="lower-box">
-							<h3><a href="our-team.html">Mark Web</a></h3>
-							<div class="designation">Founder &amp; CEO</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION TEAM -->
 
-	<!-- START SECTION INFO-HELP -->
-	<section class="info-help">
-		<div class="container">
-			<div class="row info-head">
-				<div class="col-lg-6 col-md-8 col-xs-8">
-					<div class="info-text">
-						<h3>We Can Help With Your Business Today...</h3>
-						<p>Contact our customer Soporte team if you have any further questions. We are here to help you out.</p>
-						<div class="inf-btn pro">
-							<a href="contact-us.html" class="btn btn-pro btn-secondary btn-lg">Contact Us Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-3"></div>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION INFO-HELP -->
 
-	<!-- START SECTION PRICING -->
-	<section class="pricing-table">
-		<div class="container">
-			<div class="sec-title">
-				<h2><span>Pricing </span>Packages</h2>
-				<p>Ofrecemos un servicio bajo los pilares de Honestidad, Gestión, Compromiso e Innovación, brindando siempre atención oportuna y cercana a nuestros clientes.</p>
-			</div>
-			<div class="row">
-				<!-- plan start -->
-				<div class="col-lg-3 col-md-6 col-xs-12">
-					<div class="plan text-center">
-						<span class="plan-name">Basic <small>Monthly plan</small></span>
-						<p class="plan-price"><sup class="currency">$</sup><strong>49</strong><sub>.99</sub></p>
-						<ul class="list-unstyled">
-							<li>Unlimited Extra Feature</li>
-							<li>1 Month Free Resource</li>
-							<li>100 Domain Hosting</li>
-							<li>SSL Shopping Cart</li>
-							<li>24/7 Tech Soporte</li>
-							<li>Unlimited Project</li>
-						</ul>
-						<a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-					</div>
-				</div>
-				<!-- plan end -->
-				<!-- plan start -->
-				<div class="col-lg-3 col-md-6 col-xs-12">
-					<div class="plan text-center">
-						<span class="plan-name">Standard <small>Monthly plan</small></span>
-						<p class="plan-price"><sup class="currency">$</sup><strong>99</strong><sub>.99</sub></p>
-						<ul class="list-unstyled">
-							<li>Unlimited Extra Feature</li>
-							<li>1 Month Free Resource</li>
-							<li>100 Domain Hosting</li>
-							<li>SSL Shopping Cart</li>
-							<li>24/7 Tech Soporte</li>
-							<li>Unlimited Project</li>
-						</ul>
-						<a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-					</div>
-				</div>
-				<!-- plan end -->
-				<!-- plan start -->
-				<div class="col-lg-3 col-md-6 col-xs-12">
-					<div class="plan text-center featured no-mgb yes-mgb">
-						<span class="plan-name">Professional <small>Monthly plan</small></span>
-						<p class="plan-price"><sup class="currency">$</sup><strong>149</strong><sub>.99</sub></p>
-						<ul class="list-unstyled">
-							<li>Unlimited Extra Feature</li>
-							<li>1 Month Free Resource</li>
-							<li>100 Domain Hosting</li>
-							<li>SSL Shopping Cart</li>
-							<li>24/7 Tech Soporte</li>
-							<li>Unlimited Project</li>
-						</ul>
-						<a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-					</div>
-				</div>
-				<!-- plan end -->
-				<!-- plan start -->
-				<div class="col-lg-3 col-md-6 col-xs-12">
-					<div class="plan text-center no-mgb">
-						<span class="plan-name">Premium <small>Monthly plan</small></span>
-						<p class="plan-price"><sup class="currency">$</sup><strong>399</strong><sub>.99</sub></p>
-						<ul class="list-unstyled">
-							<li>Unlimited Extra Feature</li>
-							<li>1 Month Free Resource</li>
-							<li>100 Domain Hosting</li>
-							<li>SSL Shopping Cart</li>
-							<li>24/7 Tech Soporte</li>
-							<li>Unlimited Project</li>
-						</ul>
-						<a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-					</div>
-				</div>
-				<!-- plan end -->
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION PRICING -->
 
-	<!-- START SECTION TESTIMONIALS -->
-	<section class="testimonials">
-		<div class="container">
-			<div class="sec-title">
-				<h2><span>People</span> Says</h2>
-				<p>Ofrecemos un servicio bajo los pilares de Honestidad, Gestión, Compromiso e Innovación, brindando siempre atención oportuna y cercana a nuestros clientes.</p>
-			</div>
-			<div class="owl-carousel style1">
-				<div class="single-testimonial">
-					<div class="client-comment">
-						<p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius enim, tellus tincidunt tellus est sed</p>
-					</div>
-					<div class="clinet-inner">
-						<div class="client-thumb">
-							<img src="images\testimonials\ts-1.jpeg" alt="">
-						</div>
-						<div class="client-info">
-							<h2>Lisa Smith</h2>
-							<span>New York City</span>
-							<div class="client-reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="single-testimonial">
-					<div class="client-comment">
-						<p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius enim, tellus tincidunt tellus est sed</p>
-					</div>
-					<div class="clinet-inner">
-						<div class="client-thumb">
-							<img src="images\testimonials\ts-2.jpeg" alt="">
-						</div>
-						<div class="client-info">
-							<h2>Jhon Morris</h2>
-							<span>Los Angeles</span>
-							<div class="client-reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-half-empty"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="single-testimonial">
-					<div class="client-comment">
-						<p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius enim, tellus tincidunt tellus est sed</p>
-					</div>
-					<div class="clinet-inner">
-						<div class="client-thumb">
-							<img src="images\testimonials\ts-3.jpeg" alt="">
-						</div>
-						<div class="client-info">
-							<h2>Mary Deshaw</h2>
-							<span>Chicago</span>
-							<div class="client-reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="single-testimonial">
-					<div class="client-comment">
-						<p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius enim, tellus tincidunt tellus est sed</p>
-					</div>
-					<div class="clinet-inner">
-						<div class="client-thumb">
-							<img src="images\testimonials\ts-4.jpeg" alt="">
-						</div>
-						<div class="client-info">
-							<h2>Gary Steven</h2>
-							<span>Philadelphia</span>
-							<div class="client-reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-half-empty"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="single-testimonial">
-					<div class="client-comment">
-						<p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius enim, tellus tincidunt tellus est sed</p>
-					</div>
-					<div class="clinet-inner">
-						<div class="client-thumb">
-							<img src="images\testimonials\ts-5.jpeg" alt="">
-						</div>
-						<div class="client-info">
-							<h2>Cristy Mayer</h2>
-							<span>San Francisco</span>
-							<div class="client-reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="single-testimonial">
-					<div class="client-comment">
-						<p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius enim, tellus tincidunt tellus est sed</p>
-					</div>
-					<div class="clinet-inner">
-						<div class="client-thumb">
-							<img src="images\testimonials\ts-6.jpeg" alt="">
-						</div>
-						<div class="client-info">
-							<h2>Ichiro Tasaka</h2>
-							<span>Houston</span>
-							<div class="client-reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-half-empty"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION TESTIMONIALS -->
 
-	<!-- STAR SECTION PARTNERS -->
-	<div class="partners">
-		<div class="container">
-			<div class="owl-carousel style2">
-				<div class="owl-item"><img src="images\partners\1.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\2.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\3.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\4.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\5.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\6.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\7.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\8.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\9.png" alt=""></div>
-				<div class="owl-item"><img src="images\partners\10.png" alt=""></div>
-			</div>
-		</div>
-	</div>
-	<!-- END SECTION PARTNERS -->
+
+
+
 
 	<!-- START SECTION BLOG -->
-	<section class="blog-section">
+	<section class="blog-section" id="copropiedad">
 		<div class="container">
 			<div class="sec-title">
 				<h2><span>Co</span>propiedades</h2>
@@ -803,260 +390,199 @@
 				<div class="row">
 					<div class="col-xl-6 col-md-12 col-xs-12">
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Bancolombia_Edificio_San_MartIn.JPG" alt="blog image">
 								</div>
 							</a>
 							<div class="news-item-text">
-								<a href="blog-details.html"><h3>Edificio San Martin</h3></a>
-								<span class="date">Calle 31 No. 6-83 / 87  &nbsp;/&nbsp; San Diego, Bogotá</span>
+								<a href="#"><h3>Edificio San Martín</h3></a>
+								<span class="date">Calle 31 No. 6-83 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Área Construida (Mts2) 32.471,05</p>
-									<p>Parqueaderos: 130</p>
-									<p>No. Pisos</p>
+								<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio1">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
-									
-									<ul class="action-list">
-										1 sótano, 1 semisótano, 1 mezanine, 19 pisos oficinas, cuarto de máquinas
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm mb">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Edificio_125PH.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Edificio 125 Propiedad Horizontal</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Edificio 125 P.H.</h3></a>
+								<span class="date">Calle 125 No. 19- 24 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+								<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio3">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
+									
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm mb">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Edificio_Bancol.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Corporación de Propietarios del Edificio Bancol</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Edificio Bancol</h3></a>
+								<span class="date">Carrera 8 # 12B – 31 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-								</div>
+<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio5">Ver Más</a></center>								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm mb">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Suramericana_de_la_72.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Edificio Suramericana</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Edificio Suramericana</h3></a>
+								<span class="date">Calle 72 No. 8 – 24 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio7">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm mb">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Bancolombia_Torre_Sur.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Bancolombia Torre Sur</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Bancolombia Torre Sur</h3></a>
+								<span class="date">Calle 30 A No. 6-75 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio9">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm mb">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Centro_Empresarial_Bogota_Americas.JPG" alt="blog image">
 								</div>
 							</a>
 							<div class="news-item-text">
-								<a href="blog-details.html"><h3>BOG Américas Centro Empresarial</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Centro Emp. Américas</h3></a>
+								<span class="date">Carrera 56 No. 9 - 17 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio11">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-6 col-md-12 col-xs-12">
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Centro_Empresarial_Metropolitano.JPG" alt="blog image">
 								</div>
 							</a>
 							<div class="news-item-text">
-								<a href="blog-details.html"><h3>Conjunto Mixto Centro Empresarial Metropolitano</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Conjunto Mixto CEM</h3></a>
+								<span class="date">Calle 26 No. 68 B – 31/85 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio2">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Edificio_13-35.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Edificio 13-35</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Edificio 13-35</h3></a>
+								<span class="date">Carrera 13 A No. 34 – 72 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio4">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Seguros_Bolivar_centro.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Edificio Seguros Bolívar</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Edificio Seguros Bolívar</h3></a>
+								<span class="date">Carrera 8 # 12B – 31 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio6">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Bancolombia_Calle_31.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Torre Bancolombia</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Torre Bancolombia</h3></a>
+								<span class="date">Carrera 7 # 31 - 10 / Of. Adm. Piso 26 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio8">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="images/predios/Torre_Alianza.JPG" alt="blog image">
 								</div>
 								<div class="news-item-text">
-								<a href="blog-details.html"><h3>Torre Alianza</h3></a>
-								<span class="date">Jun 23, 2018 &nbsp;/&nbsp; By Admin</span>
+								<a href="#"><h3>Torre Alianza</h3></a>
+								<span class="date">Carrera 15 No. 82 - 99 (Bogotá)</span>
 								<div class="news-item-descr">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<center><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edificio10">Ver Más</a></center>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="news-item news-item-sm">
-							<a href="blog-details.html" class="news-img-link">
+							<a href="#" class="news-img-link">
 								<div class="news-item-img">
 									<img class="resp-img" src="http://arboscentral.com/wp-content/uploads/2014/05/centro-internacional.jpg" alt="blog image">
 								</div>
 							</a>
 							<div class="news-item-text">
-								<a href="blog-details.html"><h3>Espacio Reservado para su Copropiedad</h3></a>
+								<a href="#"><h3>Espacio Reservado para su Copropiedad</h3></a>
 								
 								<div class="news-item-descr">
 									<p></p>
 								</div>
 								<div class="news-item-bottom">
 									
-									<ul class="action-list">
-										<li class="action-item"><i class="fa fa-heart"></i> <span>306</span></li>
-										<li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-										<li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
-									</ul>
 								</div>
 							</div>
 						</div>
@@ -1075,8 +601,7 @@
 					<div class="property-location">
 						<h3>¿dónde estamos?</h3>
 						<div class="divider-fade"></div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8721411183183!2d-74.06997658573685!3d4.616888443665371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f999ad5231f13%3A0x7f7a1efbf92dd9f0!2sCl.+30a+%236-22%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1544590315004" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-						<!--<div id="map-single"></div>-->
+						<div id="map-single"></div>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -1113,7 +638,7 @@
 		<div class="top-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-6">
+					<div class="col-sm-4">
 						<div class="netabout">
 							<a href="index.html" class="logo">
 								<img src="images\LOGO-GI.png" alt="netcom">
@@ -1125,50 +650,27 @@
 								<li>
 									<div class="info">
 										<i class="fa fa-map-marker" aria-hidden="true"></i>
-										<p class="in-p">95 South Park Avenue, USA</p>
+										<p class="in-p">Calle 30A #6-22</p>
 									</div>
 								</li>
 								<li>
 									<div class="info">
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<p class="in-p">+456 875 369 208</p>
+										<p class="in-p">(+57) 318 887 0525</p>
 									</div>
 								</li>
 								<li>
 									<div class="info">
 										<i class="fa fa-envelope" aria-hidden="true"></i>
-										<p class="in-p ti">Soporte@IntegralPH.com</p>
+										<p class="in-p ti">info@IntegralPH.com</p>
 									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="widget quick-link clearfix">
-							<h3 class="widget-title">Enlaces Rápidos</h3>
-							<div class="quick-links">
-								<ul class="one-half mr-5">
-									<li><a href="index.html">Inicio</a></li>
-									<li><a href="about.html">Nosotros</a></li>
-									<li><a href="services.html">Servicios</a></li>
-									<li><a href="our-team.html">Equipo</a></li>
-									<li><a href="project.html">Proyectos</a></li>
-									<li class="no-pb"><a href="blog-list.html">Blog List</a></li>
-								</ul>
-								<ul class="one-half">
-									<li><a href="blog-grid.html">Blog</a></li>
-									<li><a href="pricing-table.html">Pricing</a></li>
-									<li><a href="contact-us.html">Contacto</a></li>
-									<li><a href="#">Soporte</a></li>
-									<li><a href="faq.html">PQR</a></li>
-									<li class="no-pb"><a href="project-single.html">Proyecto</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-sm-4">
 						<div class="widget">
-							<h3>Twitter Feeds</h3>
+							<h3>Últimos Tweets</h3>
 							<div class="twitter-widget contuct">
 								<div class="twitter-area">
 									<div class="single-item">
@@ -1177,7 +679,7 @@
 										</div>
 										<div class="text">
 											<h5><a href="#">@IntegralPH</a> </h5>
-											<h4>about 5 days ago</h4>
+											<h4>hace 5 días</h4>
 										</div>
 									</div>
 									<div class="single-item">
@@ -1186,7 +688,7 @@
 										</div>
 										<div class="text">
 											<h5><a href="#">@IntegralPH</a> ¡últimos tweets de IntegralPH!</h5>
-											<h4>about 5 days ago</h4>
+											<h4>hace 5 días</h4>
 										</div>
 									</div>
 									<div class="single-item">
@@ -1195,14 +697,14 @@
 										</div>
 										<div class="text">
 											<h5><a href="#">@IntegralPH</a> ¡últimos tweets de IntegralPH!</h5>
-											<h4>about 5 days ago</h4>
+											<h4>hace 5 días</h4>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-sm-4">
 						<div class="newsletters">
 							<h3>Boletín</h3>
 							<p>Suscríbete a nuestro boletín para recibir noticias de actualidad de nuestros predios.</p>
@@ -1210,7 +712,7 @@
 						<form class="bloq-email mailchimp form-inline" method="post">
 							<label for="subscribeEmail" class="error"></label>
 							<div class="email">
-								<input type="email" id="subscribeEmail" name="EMAIL" placeholder="Enter Your Email">
+								<input type="email" id="subscribeEmail" name="EMAIL" placeholder="Ingresar Correo">
 								<input type="submit" value="Suscríbete">
 								<p class="subscription-success">
 							</div>
@@ -1221,12 +723,12 @@
 		</div>
 		<div class="second-footer">
 			<div class="container">
-				<p>Integral P. ©2018 Creado en MT AGENCIA S.A.S. </p>
+				<p>Integral PH. ©2018 Creado en MT AGENCIA S.A.S. </p>
 				<ul class="netsocials">
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/Gestión-Integral-PH-292206234756409" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/gestion_integral_ph/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -1242,6 +744,947 @@
 		</div>
 	</div>
 	<!-- END PRELOADER -->
+
+	<!-- Modal ADMINISTRACION -->
+	<div class="modal fade" id="administracion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Administración</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>Administraci&oacute;n integral de copropiedades de indole comercial, incluidas las siguientes áreas<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559685&quot;:360}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><em>F</em><em>inan</em><em>zas:</em> Creaci&oacute;n y control presupuestal, facturaci&oacute;n, recaudos, contrataci&oacute;n, pagos, gesti&oacute;n de cartera, etc.<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><em>M</em><em>antenimiento</em>: Locativo, equipos especiales, jardines, etc<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1"><em>S</em><em>ervicios generales</em>: Suministro y/o control de subcontratos de vigilancia, recepci&oacute;n, aseo y oficios varios<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1"><em>Ad</em><em>ministraci&oacute;n de riesgos</em><em> y seguridad:</em> Plan de seguridad, rutas de evacuaci&oacute;n, requerimientos legales<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="24" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1"><em>A</em><em>compa&ntilde;amiento jur&iacute;dico</em></li>
+</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal ASESORIA -->
+	<div class="modal fade" id="asesoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Asesoría</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+<ul>
+<li style="text-align: justify;">Recepci&oacute;n de Zonas Comunes y documentaci&oacute;n de parte del constructor para montaje de la administraci&oacute;n en copropiedades.<br /><br /></li>
+<li style="text-align: justify;">Asesor&iacute;a en la interpretaci&oacute;n y el cumplimiento de la Ley 675 de Propiedad Horizontal.<br /><br /></li>
+<li style="text-align: justify;">Estudios de costos de operaci&oacute;n de copropiedades, dise&ntilde;o de presupuestos, avaluos, servicios especiales.<br /><br /></li>
+<li style="text-align: left;">Requerimientos y ejecuci&oacute;n en la modernizaci&oacute;n de copropiedades.</li>
+</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal PRESTACION -->
+	<div class="modal fade" id="prestacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Prestación de Servicios Asociados</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        Suministramos servicios puntuales o permanentes de mantenimiento, conservación, ornato, mejora, reparación y adecuación, incluyendo el suministro de insumos, materiales y mano de obra.
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal AUDITORIA -->
+	<div class="modal fade" id="auditoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Auditoria</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p style="text-align: justify;">Acompa&ntilde;amiento a los propietarios en procesos de auditor&iacute;a y revisi&oacute;n de procesos de sus actuales contratistas de administraci&oacute;n<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559685&quot;:360}">&nbsp;</span></p>
+<ul>
+<li style="text-align: justify;" data-leveltext="" data-font="Symbol" data-listid="27" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1">Contrataciones<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li style="text-align: justify;" data-leveltext="" data-font="Symbol" data-listid="27" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1">Estados financieros<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li style="text-align: justify;" data-leveltext="" data-font="Symbol" data-listid="27" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1">Ejecuci&oacute;n Presupuestal<span data-ccp-props="{&quot;134233279&quot;:true,&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></li>
+<li style="text-align: justify;" data-leveltext="" data-font="Symbol" data-listid="27" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1">Cumplimiento de la Ley 675 de Propiedad Horizontal</li>
+</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+<!-- De aquí para abajo van los Modal para los edificios -->
+
+    <!-- Modal Edificio San Martín -->
+	<div class="modal fade" id="edificio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edificio San Martín</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Edificio San Martin Propiedad Horizontal</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Calle 31 No. 6-83 / 87&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>San Diego<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>32.471,05<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>PARQUEADEROS&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>130<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. PISOS<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>1 s&oacute;tano, 1 semis&oacute;tano, 1 mezanine, 19 pisos oficinas, cuarto de m&aacute;quinas<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+ <!-- Modal Conjunto Mixto CEM -->
+	<div class="modal fade" id="edificio2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Conjunto Mixto CEM</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Conjunto Mixto CEM Propiedad Horizontal </strong><strong>&ndash;</strong><strong> CEM</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Calle 26 No. 68 B &ndash; 31/85<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Ciudad Salitre<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>49.383,91<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No PISOS<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>3 s&oacute;tanos &ndash; 2 Torres de 10 pisos y mezanine &ndash; 1 torre de 3 pisos &ndash; Galer&iacute;a comercial 1 piso y mezanine<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- Modal Edificio 125 Propiedad Horizontal -->
+	<div class="modal fade" id="edificio3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edificio 125 P.H.</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+<table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Edificio 125 P.H.</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Calle 125 No. 19- 24<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Santa B&aacute;rbara<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>10.117,43<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No PISOS<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BIENES COMUNES<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Cubierta Verde con Cocineta&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- Modal Edificio 13-35 -->
+	<div class="modal fade" id="edificio4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edificio 13-35</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Edificio 13 35 Propiedad Horizontal</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCIÓN<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Carrera 13 A No. 34 &ndash; 72&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Sagrado Coraz&oacute;n<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>38.788,69<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. Pisos<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>4 s&oacute;tanos &ndash; 11 pisos&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- Modal Edificio Bancol -->
+	<div class="modal fade" id="edificio5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edificio Bancol</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Corporaci&oacute;n de Propietarios del Edificio Bancol &ndash; Propiedad Horizontal</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Carrera 8 # 12B &ndash; 31&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>La Catedral&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>16.506,46<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. PISOS<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>1 s&oacute;tano, 1 Torre de 16 pisos y Cubierta.<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal Edificio Seguros Bolívar -->
+	<div class="modal fade" id="edificio6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edificio Seguros Bolívar</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p><strong>Edificio Seguros Bol&iacute;var - Bogot&aacute; Propiedad Horizontal</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4369">
+<p>DIRECCI&Oacute;N&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>Carrera 10 # 16-01-15-27-37-39-43 y 63. Carrera 12 # 16-44 y 54. Calle 16 # 10-02-18-20-28 y 44.&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4369">
+<p>BARRIO&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>La Capuchina&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4369">
+<p>CIUDAD&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>Bogot&aacute; D.C.&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>34.535,07&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4369">
+<p>No PISOS&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>2 sótanos – 16 pisos y Mezzanine&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal Edificio Suramericana -->
+	<div class="modal fade" id="edificio7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edificio Suramericana</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p><strong>COPROPIEDAD</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Edificio Suramericana &ndash; Propiedad Horizontal</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCIÓN<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Calle 72 No. 8 &ndash; 24<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Porci&uacute;ncula&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>12.267,07<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. Pisos<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>2 sótanos – 10 pisos&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal Torre Bancolombia -->
+	<div class="modal fade" id="edificio8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Torre Bancolombia</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+<table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p>COPROPIEDAD<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Torre Bancolombia Propiedad Horizontal</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Carrera 7 # 31 - 10 (Of. Adm. Piso 26)<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>San Mart&iacute;n<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>23.079,14<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>PARQUEADEROS VISITANTES<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>N/A<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. PISOS<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>2 sótanos – 10 pisos&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal Bancolombia Torre Sur -->
+	<div class="modal fade" id="edificio9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Bancolombia Torre Sur</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p>COPROPIEDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Edificio de Uso Mixto Bancolombia Torre Sur Propiedad Horizontal</strong><span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Calle 30 A No. 6-75&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>San Diego<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>17.222,33<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. PISOS<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>1 s&oacute;tano, 1 mezanine, 8 pisos estacionamientos y locales, cuarto de m&aacute;quinas<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal Torre Alianza -->
+	<div class="modal fade" id="edificio10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Torre Alianza</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p>COPROPIEDAD<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>Edificio Torre Alianza - Propiedad Horizontal</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Carrera 15 No. 82 - 99&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Antiguo Country<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>12,381,57<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>PARQUEADEROS VISITANTES<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>N/A<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. PISOS<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="4369">
+<p>2 sótanos – 10 pisos&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal Centro Emp. Américas -->
+	<div class="modal fade" id="edificio11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Centro Emp. Américas</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        
+<table>
+<tbody>
+<tr>
+<td data-celllook="4369">
+<p>EDIFICIO<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="273">
+<p><strong>BOG Am&eacute;ricas Centro Empresarial</strong><span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>DIRECCI&Oacute;N<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Carrera 56 No. 9 - 17&nbsp;<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>BARRIO<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>San Rafael Industrial<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>CIUDAD<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>Bogot&aacute; D.C.<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>&Aacute;REA CONSTRUIDA (MTS<span data-fontsize="11">2</span>)<span data-ccp-props="{&quot;335551550&quot;:6,&quot;335551620&quot;:6}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>65.289,18<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td data-celllook="4368">
+<p>No. PISOS<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+<td data-celllook="272">
+<p>4 s&oacute;tanos, Tres Torres de 7 pisos<span data-ccp-props="{}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<!-- ARCHIVES JS -->
 	<script src="js\jquery.min.js"></script>
@@ -1281,7 +1724,12 @@
 
 	<!-- MAIN JS -->
 	<script src="js\script.js"></script>
-
+<!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
