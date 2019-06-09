@@ -520,6 +520,11 @@ figure {
   h1 {
     font-size: 1.8em;
   }
+
+  .event-detail{
+    margin: -2em .5em .5em .5em;
+    padding: .5em;
+  }
 }
 
 @media screen and (max-width: 320px){
