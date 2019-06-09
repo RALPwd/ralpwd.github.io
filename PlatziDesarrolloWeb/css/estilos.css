@@ -397,6 +397,29 @@ figure {
     display: block;
   }
 
+  .menu{
+    position: fixed;
+    background: rgba(2, 111, 255, 0.85);
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    transition: .5s;
+  }
+
+  .menu.is-active{
+    left: 0;
+  }
+
+  .menu li{
+    margin-bottom: 1.8em;
+  }
+
   .header {
     display: block;
     height: auto;
