@@ -284,6 +284,24 @@ figure {
   flex-wrap: inherit;
 }
 
+.videocontainer {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background-color: blue;
+  position: relative;
+}
+
+.ytvideo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /* Desktop first se empieza desde el media-querie más grande */
 
 @media screen and (max-width: 1024px){
