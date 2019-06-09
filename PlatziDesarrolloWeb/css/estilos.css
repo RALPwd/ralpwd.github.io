@@ -290,12 +290,31 @@ figure {
   .container{
     padding: 0 1em;
   }
+
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em 1em;
+  }
+
+  .hero img{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    /* border: 10px red dotted; */
-  }
   .header {
     display: block;
     height: auto;
@@ -387,8 +406,14 @@ figure {
     text-align: center;
     border: 1px solid transparent;
   }
+
+  h1 {
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 320px){
-  
+  h1 {
+    font-size: 1.5em;
+  }
 }
