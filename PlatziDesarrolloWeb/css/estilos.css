@@ -45,6 +45,21 @@ body{
   content: "\eab0";
 }
 
+.burger-button {
+  position:fixed;
+  background-color: rgba(0, 0, 0, 50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color:white;
+  display: none;
+  top: 5px;
+  left: 5px;
+  z-index: 4;
+}
+
 h1,
 h2,
 h3,
@@ -378,6 +393,10 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+  .burger-button {
+    display: block;
+  }
+
   .header {
     display: block;
     height: auto;
