@@ -265,6 +265,7 @@ figure {
 
 .event-list-title{
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .contact{
@@ -364,7 +365,7 @@ figure {
 
 /* Desktop first se empieza desde el media-querie más grande */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .container{
     padding: 0 1em;
   }
@@ -389,6 +390,10 @@ figure {
   h1 {
     font-size: 2em;
     z-index: 2;
+  }
+
+  .portfolio {
+    padding: 0;
   }
 }
 
@@ -461,7 +466,7 @@ figure {
     font-size: 1em;
   }
   .project-description{
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .project-course,
   .project-date,
@@ -483,7 +488,7 @@ figure {
 @media screen and (max-width: 480px){
   .project-details{
     width: auto;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .event-detail{
