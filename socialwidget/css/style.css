@@ -96,10 +96,11 @@
   width: 40px;
   transition: .5s;
   bottom: 20px;
+  padding-left: 1px;
 }
 
 .social-bar:hover{
-  left: 1px;
+  left: 0;
 }
 
 .social-icon{
@@ -111,4 +112,10 @@
 a {
   margin-bottom: 13px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .social-bar{
+    left: -30px;
+  }
 }
