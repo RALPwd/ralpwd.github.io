@@ -24,132 +24,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e900";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
 .icon-email:before {
+  background-color: #ffd300;
   content: "\e900";
   border-radius: 10px;
   padding: 5px;
   
 }
-.icon-letter:before {
-  content: "\e900";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-envelope:before {
-  content: "\e900";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-contact:before {
-  content: "\e900";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-linkedin:before {
+  background-color: #007bb5;
   content: "\e901";
   border-radius: 10px;
   padding: 5px;
   
 }
-.icon-brand6:before {
-  content: "\e901";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social6:before {
-  content: "\e901";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-github:before {
+  background-color: #333;
   content: "\e902";
   border-radius: 10px;
   padding: 5px;
   
 }
-.icon-brand5:before {
-  content: "\e902";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-octacat:before {
-  content: "\e902";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social5:before {
-  content: "\e902";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-instagram:before {
+  background-color: #3f729b;
   content: "\e903";
   border-radius: 10px;
   padding: 5px;
   
 }
-.icon-brand4:before {
-  content: "\e903";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social4:before {
-  content: "\e903";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-whatsapp:before {
+  background-color: #25d366;
   content: "\e904";
   border-radius: 10px;
   padding: 5px;
   
 }
-.icon-brand3:before {
-  content: "\e904";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social3:before {
-  content: "\e904";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-youtube:before {
+  background-color: red;
   content: "\e905";
   border-radius: 10px;
   padding: 5px;
   
 }
-.icon-brand2:before {
-  content: "\e905";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social2:before {
-  content: "\e905";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-twitter:before {
   background-color: #00acee;
   content: "\e906";
@@ -157,38 +79,9 @@
   padding: 5px;
   
 }
-.icon-brand1:before {
-  content: "\e906";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-tweet:before {
-  content: "\e906";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social1:before {
-  content: "\e906";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
+
 .icon-facebook:before {
-  background-color: blue;
-  content: "\e907";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-brand:before {
-  content: "\e907";
-  border-radius: 10px;
-  padding: 5px;
-  
-}
-.icon-social:before {
+  background-color: #1877f2;
   content: "\e907";
   border-radius: 10px;
   padding: 5px;
@@ -200,9 +93,9 @@
   flex-direction: column;
   position: fixed;
   left: -35px;
-  top: 100px;
   width: 40px;
   transition: .5s;
+  bottom: 20px;
 }
 
 .social-bar:hover{
