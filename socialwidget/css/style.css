@@ -212,5 +212,9 @@
   font-size: 30px;
   color: white;
   text-align: center;
+}
+
+a {
   margin-bottom: 13px;
+  text-decoration: none;
 }
