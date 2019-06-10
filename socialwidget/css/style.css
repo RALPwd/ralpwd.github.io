@@ -200,6 +200,7 @@
   flex-direction: column;
   position: fixed;
   left: -35px;
+  top: 100px;
   width: 40px;
   transition: .5s;
 }
