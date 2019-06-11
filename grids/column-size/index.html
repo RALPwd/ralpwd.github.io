@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-Grids</title>
+  <style>
+    body {
+      font-family: 'candara', sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(5,1fr);
+      grid-gap: 10px;
+      height: 100vh;
+    }
+    .item{
+      padding: 10px;
+      border: 1px solid red;
+    }
+    .item:nth-of-type(1){
+      background: lightslategray;
+      grid-column-start: 1; /* empieza en la primera línea */
+      grid-column-end: 3; /* termina en la tercera línea */
+    }
+    .item:nth-of-type(8){
+      background-color: cadetblue;
+      grid-column: 1/span 2; /* empieza en la linea 1 y ocupa 2 columnas*/
+    }
+    .item:nth-of-type(7){
+      background: lightseagreen;
+      grid-column: 2/4; /* empieza en la linea 2 y ocupa 4 columnas */
+    }
+    .item:nth-of-type(9){
+      background: cyan;
+      grid-column: 1/-1; /* empieza en la línea 1 y termina en la última linea*/
+    }
+  }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+  </section>
+</body>
+</html>
