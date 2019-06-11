@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-Grids</title>
+  <style>
+    body {
+      font-family: 'candara', sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template: 20% 60% 20%/ 10% 90%;
+      grid-gap: 10px;
+      height: 100vh;
+      grid-template-areas: "header header"
+                           "left content"
+                           "footer footer";
+    }
+    .item{
+      padding: 10px;
+      border: 1px solid red;
+    }
+    .header{
+      background: lightcyan;
+      grid-area: header;
+    }
+    .left{
+      background: lightblue;
+      grid-area: left;
+    }
+    .content{
+      background: lightsalmon;
+      grid-area: content;
+    }
+    .footer{
+      background: lightgray;
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item header">header</div>
+    <div class="item left">left</div>
+    <div class="item content">content</div>
+    <div class="item footer">footer</div>
+  </section>
+</body>
+</html>
