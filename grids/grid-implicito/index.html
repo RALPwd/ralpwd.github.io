@@ -13,7 +13,10 @@
       grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr  [final];
       grid-template-rows: [inicio] 100px [linea2] 100px [final];
       grid-gap: 5px;
-      height: 100vh;
+      height: 200px;
+      /* grid-auto-flow: column; hace que las secciones no especificadas en el template se acomoden en columnas*/
+      /* grid-auto-columns: 50px 80px 110px 130px; especifica las medidas de las secciones no especificadas en el template*/
+      grid-auto-rows: 50% 25% 13% 12%; /*especifica las medidas de las secciones no especificadas en el template cuando están ubicadas en filas*/
     }
     .item{
       padding: 10px;
@@ -44,6 +47,30 @@
     <div class="item">item #2</div>
     <div class="item">item #3</div>
     <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
+    <div class="item">item #5</div>
     <div class="item">item #5</div>
   </section>
 </body>
