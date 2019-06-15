@@ -1,0 +1,13 @@
+{
+    "name": "epayco/recurrentes",
+    "description": "Implementacion de pagos recurrentes para Sybarite usando epayco",
+    "authors": [
+        {
+            "name": "Raul Lara Paez",
+            "email": "ralpwd@gmail.com"
+        }
+    ],
+    "require": {
+      "epayco/epayco-php" : "dev-master"
+    }
+}
