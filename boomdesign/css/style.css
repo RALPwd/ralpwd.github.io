@@ -1,0 +1,95 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container{
+  background-image: url(../img/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.bottom-triangle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-name: entering; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: entering;
+  animation-duration: 1s;
+}
+
+.top-triangle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-name: entering2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+  animation-name: entering2;
+  animation-duration: 1.5s;
+}
+
+.boomlogo {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-name: entering3; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: entering3;
+  animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes entering {
+  from {left: -445px;}
+  to {left: 0;}
+}
+
+/* Standard syntax */
+@keyframes entering {
+  from {left: -445px;}
+  to {left: 0;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes entering2 {
+  from {left: -900px;}
+  to {left: 0;}
+}
+
+/* Standard syntax */
+@keyframes entering2 {
+  from {left: -900px;}
+  to {left: 0;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes entering3 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes entering3 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.container figure img {
+  height: 100vh;
+}
+
