@@ -8,9 +8,26 @@ html, body{
   background-image: url(../img/background1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
   width: 100vw;
   height: 100vh;
   position: relative;
+  -webkit-animation-name: opening;
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: opening;
+  animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes opening {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes opening {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .bottom-triangle {
