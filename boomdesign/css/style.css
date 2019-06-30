@@ -479,8 +479,8 @@ html, body{
 .section2 {
   width: 100vw;
   height: 100vh;
-  /* background-image: url(../img/backgroundsd.png); */
-  background-image: url(../img/dummyespacios.png);
+  background-image: url(../img/backgroundsd.png);
+/*   background-image: url(../img/dummyespacios.png); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
