@@ -1,0 +1,656 @@
+@font-face{
+  font-family: Butler;
+  font-weight: normal;
+  src: url('../fonts/Butler_Black.otf');
+}
+
+@font-face{
+  font-family: Butler;
+  font-weight: bold;
+  src: url('../fonts/Butler_Bold.otf');
+}
+
+@font-face{
+  font-family: Butler;
+  font-weight: 600;
+  src: url('../fonts/Butler_Medium.otf');
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html body{ 
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/*
+#######################################################################################################
+##################################Grid del contenedor principal########################################
+#######################################################################################################
+*/
+
+.maincontainer{
+  background-image: url(../img/homeback.jpg);
+  /* background-image: url(../dummies/home.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "menu title" "menu content";
+  grid-template-columns: 36.4% 63.6%;
+  grid-template-columns: 74.4vh 1fr;
+  grid-template-rows: 22% 78%;
+}
+
+.menu{
+  position: relative;
+  grid-area: menu;
+}
+
+.menumobile{
+  position: relative;
+  grid-area: menu;
+  display: none;
+}
+
+.titlearea{
+  position: relative;
+  display: flex;
+  grid-area: title;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.content{
+  position: relative;
+  grid-area: content;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media all and (max-width: 768px){
+  .maincontainer{
+    /* background-image: url(../dummies/homemobile.jpg); */
+    grid-template-areas: "menu" "title" "content";
+    grid-template-columns: 100%;
+    grid-template-rows: 82.5vw 1fr 1fr;
+    background-position: 25% 50%;
+  }
+  .menu{
+    display: none;
+  }
+
+  .menumobile{
+    display: block;
+  }
+
+  .titlearea{
+    box-sizing: border-box;
+    padding-bottom: 5.7%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+  }
+}
+
+/*
+#######################################################################################################
+##################################Estilos para el menú animado#########################################
+#######################################################################################################
+*/
+
+.triangleback, .trianglefront, .logoboom{
+  position: absolute;
+  height: 100%;
+  top:0;
+}
+
+.circlemenu{
+  position: absolute;
+  right: 4.3%;
+  top: 34.5%;
+  width: 38.6%;
+}
+
+.menuicons{
+  position: absolute;
+  top:31.8%;
+  right: 0;
+  width: 43%;
+  height: 36.6%;
+  /* background-color: rgba(0, 0, 255, .5); */
+}
+
+.espaciosicon, .mobiliarioicon, .industrialicon, .webicon, .contacticon, .aboutusicon, .homeicon{
+  position: absolute;
+  z-index: 1;
+}
+
+.espaciosicon{
+  width: 25%;
+  right: 66.6%;
+  top: 0;
+}
+
+.espaciosbubble{
+  position: absolute;
+  width: 94%;
+  right: 12%;
+  top: -36.3%;
+  transform: scale(0);
+  transform-origin: 20% 100%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.mobiliarioicon{
+  width: 25%;
+  right: 30.6%;
+  top: 1.3%;
+}
+
+.mobiliariobubble{
+  position: absolute;
+  width: 100%;
+  right: -53.4%;
+  top: -19.6%;
+  transform: scale(0);
+  transform-origin: -8% 140%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+
+.industrialicon{
+  width: 25.2%;
+  right: 0.8%;
+  top:23%;
+}
+
+.industrialbubble{
+  position: absolute;
+  width: 93%;
+  right: -89%;
+  top: 13.6%;
+  transform: scale(0);
+  transform-origin: -24% 95%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.webicon{
+  width: 25%;
+  right: .4%;
+  top: 54%;
+}
+
+.webbubble{
+  position: absolute;
+  width: 103%;
+  right: -99%;
+  bottom: 11.8%;
+  transform: scale(0);
+  transform-origin: -15% 15%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.contacticon{
+  width: 25%;
+  right: 30.6%;
+  bottom: 1.8%;
+}
+
+.contactbubble{
+  position: absolute;
+  width: 79%;
+  right: -32%;
+  bottom: -21.2%;
+  transform: scale(0);
+  transform-origin: 0% -30%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.aboutusicon{
+  width: 25%;
+  right: 66.6%;
+  bottom: .2%;
+}
+
+.aboutusbubble{
+  position: absolute;
+  width: 94.2%;
+  right: 11.4%;
+  bottom: -38.5%;
+  transform: scale(0);
+  transform-origin: 25% 0%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.homeicon{
+  width: 14.8%;
+  right: 51.5%;
+  top: 43.6%;
+}
+
+@media all and (max-width: 768px){
+  .triangleback, .trianglefront{
+    width: 100%;
+    height: auto;
+  }
+
+  .logoboom{
+    width: 88%;
+    top: -37.3%;
+    left: 9.8%;
+    height: 108.5%;
+  }
+
+  .boomicon{
+    position: absolute;
+    width: 16.3%;
+    left: 42.1%;
+    top: 54%;
+    transition-property: filter;
+    transition-duration: .8s;
+  }
+
+  #openmenu{
+    position: relative;
+    width: 18%;
+    height: 18%;
+    left: 41.1%;
+    top: 54.6%;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .circlemenu{
+    right: 36%;
+    top: 65.5%;
+    width: 28%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .menuicons{
+    top: 55.2%;
+    right: 33.7%;
+    width: 32.6%;
+    height: 44.9%;
+  }
+
+  .espaciosicon{
+    width: 22.6%;
+    right: 0.6%;
+    top: 29.5%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .espaciosbubble{
+    width: 98%;
+    right: -95%;
+    top: 28.7%;
+  }
+
+  .mobiliarioicon{
+    width: 22.5%;
+    right: 1.6%;
+    top: 56.6%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .mobiliariobubble{
+    width: 100%;
+    right: -94.6%;
+    top: 56.4%;
+  }
+
+  .industrialicon{
+    width: 21.4%;
+    right: 23.3%;
+    top: initial;
+    bottom: 0.6%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .industrialbubble{
+    width: 98.2%;
+    right: -72%;
+    top: initial;
+    bottom: 4.1%;
+  }
+
+  .webicon{
+    width: 22%;
+    right: initial;
+    top: initial;
+    bottom: 0.6%;
+    left: 24.1%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .webbubble{
+    width: 98.5%;
+    right: initial;
+    left: -69%;
+    bottom: 3.7%;
+  }
+
+  .contacticon{
+    width: 22%;
+    right: initial;
+    left: 1.1%;
+    bottom: 23.8%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .contactbubble{
+    width: 98.2%;
+    right: initial;
+    left: -91.9%;
+    bottom: 27.7%;
+  }
+
+  .aboutusicon{
+    width: 22.5%;
+    right: initial;
+    bottom: 51.2%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+
+  .aboutusbubble{
+    width: 99%;
+    right: 94.4%;
+    bottom: 55.5%;
+  }
+
+  .homeicon{
+    width: 13%;
+    right: 43.7%;
+    top: 48.5%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .8s;
+  }
+}
+
+/*
+#######################################################################################################
+#############################Animaciones de entrada del menú###########################################
+#######################################################################################################
+*/
+
+.maincontainer{
+  animation: starting .8s;
+}
+
+.titlearea{
+  animation: starting .8s 3.8s backwards;
+}
+
+@keyframes starting{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.triangleback{
+  animation: entering .8s .4s backwards;
+}
+
+.trianglefront{
+  animation: entering .8s .8s backwards;
+}
+
+@keyframes entering{
+  from{left: -100%;}
+  to{left: 0;}
+}
+
+.logoboom{
+  animation: enteringlogo .8s 1.6s backwards;
+}
+
+@keyframes enteringlogo{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.circlemenu{
+  animation: blowing .8s 2s backwards;
+}
+
+.espaciosicon{
+  animation: blowing .8s 2.4s backwards;
+}
+
+.mobiliarioicon{
+  animation: blowing .8s 2.6s backwards;
+}
+
+.industrialicon{
+  animation: blowing .8s 2.8s backwards;
+}
+
+.webicon{
+  animation: blowing .8s 3s backwards;
+}
+
+.contacticon{
+  animation: blowing .8s 3.2s backwards;
+}
+
+.aboutusicon{
+  animation: blowing .8s 3.4s backwards;
+}
+
+.homeicon{
+  animation: blowing .8s 3.6s backwards;
+}
+
+@keyframes blowing{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+@media all and (max-width: 768px){
+  @keyframes entering{
+    from{top: -100%;}
+    to{left: 0;}
+  }
+
+  .espaciosbubble, .mobiliariobubble, .industrialbubble{
+    transform-origin: -14% 70%;
+  }
+
+  .webbubble, .contactbubble, .aboutusbubble{
+    transform-origin: 112% 62%;
+  }
+
+  .boomicon{
+    animation: blowing1 4s 2s backwards;
+  }
+
+  @keyframes blowing1{
+    0% {transform: scale(0); filter: invert(0%);}
+    20%, 80% {transform: scale(1); filter: invert(100%);}
+    100%{transform: scale(1); filter: invert(0%);}
+  }
+
+  .circlemenu{
+    animation: blowing2 6s 2.2s;
+  }
+
+  @keyframes blowing2{
+    0%, 100%{transform: scale(0);}
+    15%, 85% {transform: scale(1);}
+  }
+
+  .espaciosicon, .espaciosbubble{
+    animation: blowing3 4s 2.6s;
+  }
+
+  .mobiliarioicon, .mobiliariobubble{
+    animation: blowing3 4s 2.8s;
+  }
+
+  .industrialicon, .industrialbubble{
+    animation: blowing3 4s 3s;
+  }
+
+  .webicon, .webbubble{
+    animation: blowing3 4s 3.2s;
+  }
+
+  .contacticon, .contactbubble{
+    animation: blowing3 4s 3.4s;
+  }
+
+  .aboutusicon, .aboutusbubble{
+    animation: blowing3 4s 3.6s;
+  }
+
+  .homeicon{
+    animation: blowing3 4s 3.8s;
+  }
+
+  @keyframes blowing3{
+    0%, 100%{transform: scale(0); opacity: 0; visibility: hidden;}
+    20%, 80% {transform: scale(1); opacity: 1; visibility: visible;}
+  }
+}
+
+/*
+#######################################################################################################
+#################################Animaciones hover del menú############################################
+#######################################################################################################
+*/
+
+.espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
+  z-index: 0;
+  transition-property: visibility, transform, opacity;
+  transition-duration: .2s;
+}
+
+.espaciosicon:hover ~ .espaciosbubble, .espaciosbubble:hover,
+.mobiliarioicon:hover ~ .mobiliariobubble, .mobiliariobubble:hover,
+.industrialicon:hover ~ .industrialbubble, .industrialbubble:hover,
+.webicon:hover ~ .webbubble, .webbubble:hover,
+.contacticon:hover ~ .contactbubble, .contactbubble:hover,
+.aboutusicon:hover ~ .aboutusbubble, .aboutusbubble:hover{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media all and (max-width: 768px){
+  input#openmenu:checked ~ .boomicon{
+    filter: invert(100%);
+  }
+
+  .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
+    transition-property: visibility, transform, opacity;
+    transition-duration: .8s;
+  }
+
+  input#openmenu:checked ~ .circlemenu,
+  input#openmenu:checked ~ .menuicons > a > .espaciosicon,
+  input#openmenu:checked ~ .menuicons > a > .mobiliarioicon,
+  input#openmenu:checked ~ .menuicons > a > .industrialicon,
+  input#openmenu:checked ~ .menuicons > a > .webicon,
+  input#openmenu:checked ~ .menuicons > a > .contacticon,
+  input#openmenu:checked ~ .menuicons > a > .aboutusicon,
+  input#openmenu:checked ~ .menuicons > a > .espaciosbubble,
+  input#openmenu:checked ~ .menuicons > a > .mobiliariobubble,
+  input#openmenu:checked ~ .menuicons > a > .industrialbubble,
+  input#openmenu:checked ~ .menuicons > a > .webbubble,
+  input#openmenu:checked ~ .menuicons > a > .contactbubble,
+  input#openmenu:checked ~ .menuicons > a > .aboutusbubble,
+  input#openmenu:checked ~ .menuicons > a > .homeicon{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+}
+
+
+
+
+
+/*
+#######################################################################################################
+##############################Estilos para el texto de la cabecera#####################################
+#######################################################################################################
+*/
+
+.titlearea h1{
+  font-family: Butler, serif;
+  color: white;
+  font-size: 4.73vh;
+  font-weight: 600;
+  width: 100%;
+}
+
+.titlearea p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  color: white;
+  font-size: 3.6vh;
+  width: 100%;
+}
+
+@media all and (max-width: 768px){
+  .titlearea h1{
+    font-size: 4.35vw;
+  }
+
+  .titlearea p{
+    font-size: 3.2vw;
+  }
+}
+
+/*
+#######################################################################################################
+##################################Estilos para los créditos############################################
+#######################################################################################################
+*/
+
+.content p{
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 14vh;
+  right: -12.5vh;
+  font-size: 1.5vh;
+}
+
+@media all and (max-width: 768px){
+  .content p{
+    bottom: 8vh;
+    right: -5.6vh;
+    font-size: 0.75vh;
+  }
+}
