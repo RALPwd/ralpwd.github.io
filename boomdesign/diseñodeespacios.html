@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/stylecat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
 
   <title>Document</title>
 </head>
@@ -51,7 +52,7 @@
       <img src="img/mobile/trianglefront.svg" alt="" class="trianglefront">
       <img src="img/logoboom.svg" alt="" class="logoboom">
       <input type="checkbox" id="openmenu">
-      <img src="img/mobile/boomicon.svg" alt="" class="boomicon">
+      <img src="img/mobile/boomiconespacios.svg" alt="" class="boomicon">
       <img src="img/mobile/circlemenu.svg" alt="" class="circlemenu">
       <div class="menuicons">
         <a href="diseñodeespacios.html">
@@ -85,8 +86,125 @@
     </div>
     <div class="content">
       <img src="img/sliderback.png" alt="" class="sliderback">
+      <div class="slidercontainer">
+        <div class="sliderflexible">
+          <img src="img/sliderup.png" alt="" class="sliderup">
+          <img src="img/sliderdown.png" alt="" class="sliderdown">
+          <!-- <img src="dummies/sliderimage.jpg" alt=""> -->
+          <ul class="slider">
+            <li><img src="dummies/sliderimage-01.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-02.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-03.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-04.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-05.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-06.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-07.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-08.jpg" alt=""></li>
+            <li><img src="dummies/sliderimage-09.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sliderbuttons">
+        <img src="img/arrowup.svg" alt="">
+        <img src="img/arrowdown.svg" alt="">
+      </div>
       <p>Diseñado y desarrollado por BOOM design.</p>
     </div>
+    <div class="contentmobile">
+      <img src="img/mobile/sliderback.png" alt="" class="sliderback">
+      <img src="img/mobile/slidertextback.png" alt="" class="slidertextback">
+      <div class="slidercontainer">
+        <ul class="slidermobile">
+          <li><img src="dummies/sliderimage-01.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-02.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-03.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-04.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-05.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-06.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-07.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-08.jpg" alt=""></li>
+          <li><img src="dummies/sliderimage-09.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div class="sliderbuttonsmobile">
+        <img src="img/mobile/arrowprev.svg" alt="">
+        <img src="img/mobile/arrownext.svg" alt="">
+      </div>
+    </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+  <script>
+    var myslider = tns({
+      container: '.slider',
+      // mode: gallery,
+      axis: 'vertical',
+      // items: 2,
+      // gutter: 2,
+      // edgepadding: 10,
+      // fixedWidth: 500,
+      // autoWidth: true,
+      // autoHeight: true,
+      // viewportMax: false,
+      // slideBy: 2,
+      center: true,
+      // controls: false,
+      controlsPosition: 'bottom',
+      // controlsText: ['Anterior', 'Siguiente'],
+      controlsContainer: '.sliderbuttons',
+      // prevButton: false,
+      // nextButton: false,
+      nav: false,
+      // navPosition: 'bottom',
+      // navAsThumbnails: true,
+      arrowKeys: true,
+      // speed: 1000,
+      // autoplay: true,
+      // autoplayPosition: 'bottom',
+      // autoplayTimeout: 1000,
+      // autoplayDirection: 'backward',
+      // autoplayText: ['Iniciar', 'Detener'],
+      // autoplayHoverPause: true,
+      // autoplayButton: false,
+      // loop: false,
+      // rewind: true,
+      // mouseDrag: true,
+    })
+
+    var myslider2 = tns({
+      container: '.slidermobile',
+      // mode: gallery,
+      // axis: 'vertical',
+      // items: 2,
+      // gutter: 2,
+      // edgepadding: 10,
+      // fixedWidth: 500,
+      // autoWidth: true,
+      // autoHeight: true,
+      // viewportMax: false,
+      // slideBy: 2,
+      center: true,
+      // controls: false,
+      // controlsPosition: 'bottom',
+      // controlsText: ['Anterior', 'Siguiente'],
+      controlsContainer: '.sliderbuttonsmobile',
+      // prevButton: false,
+      // nextButton: false,
+      nav: false,
+      // navPosition: 'bottom',
+      // navAsThumbnails: true,
+      arrowKeys: true,
+      // speed: 1000,
+      // autoplay: true,
+      // autoplayPosition: 'bottom',
+      // autoplayTimeout: 1000,
+      // autoplayDirection: 'backward',
+      // autoplayText: ['Iniciar', 'Detener'],
+      // autoplayHoverPause: true,
+      // autoplayButton: false,
+      // loop: false,
+      // rewind: true,
+      // mouseDrag: true,
+    })
+  </script>
 </body>
 </html>
