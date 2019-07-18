@@ -250,9 +250,9 @@ html body{
 
   .boomicon{
     position: absolute;
-    width: 16.8%;
-    left: 41.9%;
-    top: 53.9%;
+    width: 16.3%;
+    left: 42.1%;
+    top: 54%;
     transition-property: filter;
     transition-duration: .8s;
   }

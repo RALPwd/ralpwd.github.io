@@ -34,7 +34,7 @@ html body{
 */
 
 .maincontainer{
-  background-image: url(../img/homeback.jpg);
+  /* background-image: url(../img/homeback.jpg); */
   /* background-image: url(../dummies/home.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,6 +48,96 @@ html body{
   grid-template-columns: 74.4vh 1fr;
   -ms-grid-rows: 22% 78%;
   grid-template-rows: 22% 78%;
+}
+
+.back1, .back2, .back3, .back4, .back5, .back6, .back7{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.back1{
+  background-image: url(../img/homebackground1.jpg);
+  opacity: 0;
+  animation: backchange1 30s infinite;
+}
+
+@keyframes backchange1 { /*+esta transcurre del principio al segundo 2.5*/
+  0%, 8.33% {opacity: 1;} /*0 a 2.5*/
+  13.33%, 100% {opacity: 0;} /*2.5 a 30*/
+}
+
+.back2{
+  background-image: url(../img/homebackground2.jpg);
+  opacity: 0;
+  animation: backchange2 30s infinite;
+}
+
+@keyframes backchange2 { /*esta transcurre del segundo 2.5 al 7.5*/
+  0%, 8.33% {opacity: 0;} /*0 a 2.5*/
+  13.33%, 25% {opacity: 1;} /*2.5 a 7.5*/
+  30%, 100% {opacity: 0;} /*7.5 a 30*/
+}
+
+.back3{
+  background-image: url(../img/homebackground3.jpg);
+  opacity: 0;
+  animation: backchange3 30s infinite;
+}
+
+@keyframes backchange3 { /*esta transcurre del segundo 7.5 al 12.5*/
+  0%, 25% {opacity: 0;} /*0 a 7.5*/
+  30%, 41.66% {opacity: 1;} /*7.5 a 12.5*/
+  46.66%, 100% {opacity: 0;} /*12.5 a 30*/
+}
+
+.back4{
+  background-image: url(../img/homebackground4.jpg);
+  opacity: 0;
+  animation: backchange4 30s infinite;
+}
+
+@keyframes backchange4 { /*esta transcurre del segundo 12.5 al 17.5*/
+  0%, 41.66% {opacity: 0;} /*0 a 12.5*/
+  46.66%, 58.33% {opacity: 1;} /*12.5 a 17.5*/
+  63.33%, 100% {opacity: 0;} /*17.5 a 30*/
+}
+
+.back5{
+  background-image: url(../img/homebackground5.jpg);
+  opacity: 0;
+  animation: backchange5 30s infinite;
+}
+
+@keyframes backchange5 { /*esta transcurre del segundo 17.5 al 22.5*/
+  0%, 58.33% {opacity: 0;} /*0 a 17.5*/
+  63.33%, 75% {opacity: 1;} /*17.5 a 22.5*/
+  80%, 100% {opacity: 0;} /*22.5 a 30*/
+}
+
+.back6{
+  background-image: url(../img/homebackground6.jpg);
+  opacity: 0;
+  animation: backchange6 30s infinite;
+}
+
+@keyframes backchange6 { /*esta transcurre del segundo 22.5 al 27.5*/
+  0%, 75% {opacity: 0;} /*0 al 22.5*/
+  80%, 91.66% {opacity: 1;} /*22.5 al 27.5*/
+  96.66%, 100% {opacity: 0;} /*27.5 al 30*/
+}
+
+.back7{
+  background-image: url(../img/homebackground1.jpg);
+  opacity: 0;
+  animation: backchange7 30s infinite;
+}
+
+@keyframes backchange7 { /*esta transcurre del segundo 27.5 al segundo 30*/
+  0%, 91.66% {opacity: 0;} /*0 al 27.5*/
+  96.66%, 100% {opacity: 1;} /*27.5 al 30*/
 }
 
 .menu{
@@ -104,6 +194,10 @@ html body{
     -ms-grid-rows: 82.5vw 1fr 1fr;
     grid-template-rows: 82.5vw 1fr 1fr;
     /* background-position: 25% 50%; */
+  }
+
+  .back1, .back2, .back3, .back4, .back5, .back6, .back7{
+    background-position: 25% 50%;
   }
 
   .menu{
@@ -678,6 +772,6 @@ html body{
   }
 }
 
-a > img:active {
+a > img:focus {
   color: transparent;
 }
