@@ -84,6 +84,7 @@ html body{
 
 .back3{
   background-image: url(../img/homebackground3.jpg);
+  background-position-y: 60%;
   opacity: 0;
   animation: backchange3 30s infinite;
 }
@@ -120,6 +121,7 @@ html body{
 
 .back6{
   background-image: url(../img/homebackground6.jpg);
+  background-position-y: initial;
   opacity: 0;
   animation: backchange6 30s infinite;
 }
