@@ -651,8 +651,15 @@ html body{
   height: 100%;
   width: 89.6%;
   left: 3.6%;
-  animation: retard 2s forwards;
-  opacity: 0;
+  transform: scale(0);
+  transform-origin: 100% 50%;
+  animation: sliderbackenter 1.5s forwards; /*Entra primero*/
+  opacity: 1;
+}
+
+@keyframes sliderbackenter{
+  from{transform: scale(0); opacity: 0;}
+  to{transform: scale(1); opacity: 1;}
 }
 
 .sliderheader{
@@ -662,6 +669,7 @@ html body{
   width: 47.8%;
   height: 11.1%;
   z-index: 2;
+  animation: sliderupdown 1.5s 2s backwards; /*Entra tercero*/
 }
 
 .slider2{
@@ -688,7 +696,7 @@ html body{
   height: 100%;
   width: 59.5%;
   z-index: 2;
-  font-size: 2vh;
+  font-size: 1.96vh;
   font-weight: 100;
   border-right: 1px solid white;
 }
@@ -722,8 +730,8 @@ html body{
   height: 220%;
   width: 100.2%;
   left: -0.2%;
-  animation: retard 2s forwards;
-  opacity: 0;
+  animation: sliderupdown 1.5s 1.5s backwards; /*Entra segundo*/
+  opacity: 1;
 }
 
 .sliderdown {
@@ -732,9 +740,30 @@ html body{
   height: 220%;
   width: 100.2%;
   left: -0.2%;
-  animation: retard 2s forwards;
-  opacity: 0;
+  animation: sliderupdown 1.5s 1.5s backwards; /*Entra segundo*/
+  opacity: 1;
   z-index: 2;
+}
+
+@keyframes sliderupdown{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.bottomtext{
+  position: absolute;
+  left: 12.2%;
+  bottom: -25.3%;
+  width: 75.6%;
+  height: 16.5%;
+  z-index: 2;
+  font-family: Bahnschrift;
+  font-size: 1.95vh;
+  font-weight: 100;
+  line-height: 2.6vh;
+  text-align: justify;
+  animation: sliderupdown 1.5s 2s backwards; /*Entra tercero*/
+  /* background-color: rgba(0, 0, 255, .5) */
 }
 
 .slidercontainer{
@@ -767,7 +796,7 @@ html body{
   width: 1.2vw;
   height: 6.8vh;
   /* background-color: rgba(255, 255, 255, 0.5) */
-  animation: retard 2s forwards;
+  animation: sliderupdown 1.5s 3s forwards; /*Entra quinto*/
   opacity: 0;
 }
 
@@ -780,21 +809,42 @@ html body{
   outline: none;
 }
 
+.sliderbuttons img:active{
+  filter: contrast(5);
+}
+
 .slider{
   /* position: absolute; */
   top: 0;
   list-style: none;
-  animation: retard 2s forwards;
-  opacity: 0;
-}
-
-@keyframes retard{
-  0%, 50% {opacity: 0;}
-  100% {opacity: 1;}
+  animation: sliderupdown 1.5s 3s backwards; /*Entra quinto*/
+  opacity: 1;
 }
 
 .slider > li > img{
   width: 100%;
+}
+
+.categorytitle{
+  position: absolute;
+  left: 57.1%;
+  bottom: 7.1%;
+  width: 49.3%;
+  height: 6.4%;
+  color: black;
+  font-family: Bahnschrift;
+  font-size: 2vh;
+  font-weight: 100;
+  line-height: 3vh;
+  animation: sliderupdown 1.5s 2.5s backwards; /*Entra cuarto*/
+  /* background-color: rgba(0, 0, 255, .5); */
+}
+
+.categorytitle span{
+  font-family: Butler;
+  font-weight: 600;
+  font-size: 3.75vh;
+  line-height: 3.4vh;
 }
 
 @media all and (max-width: 768px){
