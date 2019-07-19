@@ -653,7 +653,7 @@ html body{
   left: 3.6%;
   transform: scale(0);
   transform-origin: 100% 50%;
-  animation: sliderbackenter 1.5s forwards; /*Entra primero*/
+  animation: sliderbackenter 1.3s forwards; /*Entra primero*/
   opacity: 1;
 }
 
@@ -669,7 +669,7 @@ html body{
   width: 47.8%;
   height: 11.1%;
   z-index: 2;
-  animation: sliderupdown 1.5s 2s backwards; /*Entra tercero*/
+  animation: sliderupdown 1.3s 1.6s backwards; /*Entra tercero*/
 }
 
 .slider2{
@@ -730,7 +730,7 @@ html body{
   height: 220%;
   width: 100.2%;
   left: -0.2%;
-  animation: sliderupdown 1.5s 1.5s backwards; /*Entra segundo*/
+  animation: sliderupdown 1.3s 1.3s backwards; /*Entra segundo*/
   opacity: 1;
 }
 
@@ -740,7 +740,7 @@ html body{
   height: 220%;
   width: 100.2%;
   left: -0.2%;
-  animation: sliderupdown 1.5s 1.5s backwards; /*Entra segundo*/
+  animation: sliderupdown 1.3s 1.3s backwards; /*Entra segundo*/
   opacity: 1;
   z-index: 2;
 }
@@ -762,7 +762,7 @@ html body{
   font-weight: 100;
   line-height: 2.6vh;
   text-align: justify;
-  animation: sliderupdown 1.5s 2s backwards; /*Entra tercero*/
+  animation: sliderupdown 1.3s 1.6s backwards; /*Entra tercero*/
   /* background-color: rgba(0, 0, 255, .5) */
 }
 
@@ -796,7 +796,7 @@ html body{
   width: 1.2vw;
   height: 6.8vh;
   /* background-color: rgba(255, 255, 255, 0.5) */
-  animation: sliderupdown 1.5s 3s forwards; /*Entra quinto*/
+  animation: sliderupdown 1.3s 2.2s forwards; /*Entra quinto*/
   opacity: 0;
 }
 
@@ -817,7 +817,7 @@ html body{
   /* position: absolute; */
   top: 0;
   list-style: none;
-  animation: sliderupdown 1.5s 3s backwards; /*Entra quinto*/
+  animation: sliderupdown 1.3s 2.2s backwards; /*Entra quinto*/
   opacity: 1;
 }
 
@@ -836,7 +836,7 @@ html body{
   font-size: 2vh;
   font-weight: 100;
   line-height: 3vh;
-  animation: sliderupdown 1.5s 2.5s backwards; /*Entra cuarto*/
+  animation: sliderupdown 1.3s 1.9s backwards; /*Entra cuarto*/
   /* background-color: rgba(0, 0, 255, .5); */
 }
 
