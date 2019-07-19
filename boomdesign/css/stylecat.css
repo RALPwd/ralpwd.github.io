@@ -16,12 +16,40 @@
   src: url('../fonts/Butler_Medium.otf');
 }
 
+/* @font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT.woff') format('woff');
+} */
+
+@font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: 100;
+  src: local('Bahnschrift Light'), url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift'), url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Bahnschrift Semibold'), url('../fonts/BAHNSCHRIFT.TTF');
+}
+
 *{
   padding: 0;
   margin: 0;
 }
 
-html body{ 
+html body{
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -35,7 +63,6 @@ html body{
 
 .maincontainer{
   background-image: url(../img/homeback.jpg);
-  /* background-image: url(../dummies/home.jpg); */
   /* background-image: url(../dummies/espacios.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -597,7 +624,7 @@ html body{
 #######################################################################################################
 */
 
-.content p{
+.credits{
   position: absolute;
   transform: rotate(-90deg);
   bottom: 14vh;
@@ -626,6 +653,67 @@ html body{
   left: 3.6%;
   animation: retard 2s forwards;
   opacity: 0;
+}
+
+.sliderheader{
+  position: absolute;
+  top: 6.3%;
+  left: 20.6%;
+  width: 47.8%;
+  height: 11.1%;
+  z-index: 2;
+}
+
+.slider2{
+  width: 100%;
+  height: 100%;
+}
+
+.slider2 > li{
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+}
+
+.sliderheaderitem {
+  display: flex;
+  height: 11.1vh;
+  width: 31vw;
+  font-family: Bahnschrift;
+}
+
+.sliderdescription{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 59.5%;
+  z-index: 2;
+  font-size: 2vh;
+  font-weight: 100;
+  border-right: 1px solid white;
+}
+
+.slidertitle{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  width: 40.5%;
+  z-index: 2;
+  font-size: 1.95vh;
+  font-weight: 100;
+  box-sizing: border-box;
+  padding-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.slidertitle > p {
+  width: 100%;
+}
+
+.slidertitle > p > span {
+  font-weight: normal;
 }
 
 .sliderup {

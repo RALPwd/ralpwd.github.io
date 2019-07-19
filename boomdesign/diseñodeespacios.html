@@ -86,6 +86,109 @@
     </div>
     <div class="content">
       <img src="img/sliderback.png" alt="" class="sliderback">
+      <div class="sliderheader">
+        <ul class="slider2">
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Análisis y conceptualización, planimetría, renderizado, construcción y acabados.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Bohemian Room</span></p>
+                <h3>Bogotá</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci repellendus.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyecto 2</span></p>
+                <h3>Barranquilla</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Illum in facere veniam quisquam excepturi voluptatum culpa modi explicabo nam, ducimus.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyecto 3</span></p>
+                <h3>Medellín</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Officia, delectus rerum optio quidem laborum, voluptas itaque pariatur rem error.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyecto 4</span></p>
+                <h3>Miami</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Enim laborum distinctio, quod laudantium voluptate rem ex autem tempora.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyecto 5</span></p>
+                <h3>Cali</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Et delectus dignissimos molestias at corporis autem ipsum doloremque.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyecto 6</span></p>
+                <h3>Bogotá</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Recusandae possimus labore pariatur, delectus voluptatum fuga, amet at esse.</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyecto 7</span></p>
+                <h3>Barranquilla</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Corrupti adipisci vero minima deleniti ad, culpa facere a animi?</p>
+              </div>
+              <div class="slidertitle">
+                <p>Proyecto: <span>Proyeto 8</span></p>
+                <h3>Barranquilla</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sliderheaderitem">
+              <div class="sliderdescription">
+                <p>Minima molestias dolorem reiciendis doloribus? Facilis nostrum, iure neque quidem alias fugit sit.</p>
+              </div>
+              <div class="slidertitle">
+                  <p>Proyecto: <span>Proyecto 9</span></p>
+                  <h3>Medellín</h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
       <div class="slidercontainer">
         <div class="sliderflexible">
           <img src="img/sliderup.png" alt="" class="sliderup">
@@ -108,7 +211,7 @@
         <img src="img/arrowup.svg" alt="">
         <img src="img/arrowdown.svg" alt="">
       </div>
-      <p>Diseñado y desarrollado por BOOM design.</p>
+      <p class="credits">Diseñado y desarrollado por BOOM design.</p>
     </div>
     <div class="contentmobile">
       <img src="img/mobile/sliderback.png" alt="" class="sliderback">
@@ -134,8 +237,44 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
   <script>
-    var myslider = tns({
+    var sliderdesktop = tns({
       container: '.slider',
+      // mode: gallery,
+      axis: 'vertical',
+      // items: 2,
+      // gutter: 2,
+      // edgepadding: 10,
+      // fixedWidth: 500,
+      // autoWidth: true,
+      // autoHeight: true,
+      // viewportMax: false,
+      // slideBy: 2,
+      center: true,
+      // controls: false,
+      controlsPosition: 'bottom',
+      // controlsText: ['Anterior', 'Siguiente'],
+      controlsContainer: '.sliderbuttons',
+      // prevButton: false,
+      // nextButton: false,
+      nav: false,
+      // navPosition: 'bottom',
+      // navAsThumbnails: true,
+      arrowKeys: true,
+      // speed: 1000,
+      // autoplay: true,
+      // autoplayPosition: 'bottom',
+      // autoplayTimeout: 1000,
+      // autoplayDirection: 'backward',
+      // autoplayText: ['Iniciar', 'Detener'],
+      // autoplayHoverPause: true,
+      // autoplayButton: false,
+      // loop: false,
+      // rewind: true,
+      // mouseDrag: true,
+    })
+
+    var sliderdesktoptitle = tns({
+      container: '.slider2',
       // mode: gallery,
       axis: 'vertical',
       // items: 2,
