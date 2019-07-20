@@ -35,7 +35,7 @@ html body{
 
 .maincontainer{
   /* background-image: url(../img/homeback.jpg); */
-  /* background-image: url(../dummies/home.jpg); */
+  background-image: url(../dummies/contactus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -57,6 +57,7 @@ html body{
   height: 100%;
   width: 100%;
   background-position-y: 100%;
+  background-attachment: fixed;
 }
 
 .back1{
@@ -253,6 +254,18 @@ html body{
   width: 38.6%;
 }
 
+.pacman{
+  position: absolute;
+  right: 62.1%;
+  top: 30.5%;
+  width: 20.2%;
+  height: 39.6%;
+  border-radius: 50%;
+  background: inherit;
+  box-shadow: inset 0px 0px 300px -200px rgba(0,0,0,0.5);
+  filter: blur(5px);
+}
+
 .menuicons{
   position: absolute;
   top:31.8%;
@@ -351,6 +364,98 @@ html body{
   transform-origin: 0% -30%;
   opacity: .0;
   visibility: hidden;
+}
+
+.contactusbubble{
+  position: absolute;
+  width: 241%;
+  height: 169.3%;
+  right: -196%;
+  bottom: -76%;
+  /* transform: scale(0);
+  transform-origin: 0% 54%; */
+  /* opacity: .0;
+  visibility: hidden; */
+}
+
+.contactsection{
+  position: absolute;
+  width: 241%;
+  height: 169.3%;
+  right: -196%;
+  bottom: -76%;
+  z-index: 2;
+  /* transform: scale(0);
+  transform-origin: 0% 54%; */
+}
+
+.contactsection a{
+  color: white;
+  font-family: Bahnschrift;
+  text-decoration: none;
+}
+
+.socialicon{
+  position: absolute;
+  left: 43%;
+  width: 11.5%;
+  height: 11.5%;
+}
+
+#facebook{
+  top: 5.4%;
+}
+
+#facebooklink, #whatsapplink, #twitterlink, #instagramlink, #phonelink, #maillink{
+  position: absolute;
+  left: 55.8%;
+  font-size: 1.99vmin;
+  font-weight: 100;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+#facebooklink {
+  top: 10%;
+}
+
+#whatsapp{
+  top: 21%;
+}
+
+#whatsapplink{
+  top: 25.3%;
+}
+
+#twitter{
+  top: 36.5%;
+}
+
+#twitterlink{
+  top: 40.6%;
+}
+
+#instagram{
+  top: 51.5%;
+}
+
+#instagramlink{
+  top: 55.6%;
+}
+
+#phone{
+  top: 67.5%;
+}
+
+#phonelink{
+  top: 70.5%;
+}
+
+#mail{
+  top: 83%;
+}
+
+#maillink{
+  top: 87.4%;
 }
 
 .aboutusicon{
