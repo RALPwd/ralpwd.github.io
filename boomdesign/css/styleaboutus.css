@@ -63,7 +63,7 @@ html body{
 
 .maincontainer{
   background-image: url(../img/homeback.jpg);
-  background-image: url(../dummies/contactusmobile.jpg);
+  /* background-image: url(../dummies/contactusmobile.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -106,7 +106,6 @@ html body{
     width: 100vw;
     overflow: initial;
     display: flex;
-    align-items: center;
   }
 
   .maincontainer{
