@@ -394,7 +394,7 @@ html body{
     width: 16.3%;
     left: 42.1%;
     top: 54%;
-    z-index: 5;
+    z-index: 1;
     transition-property: filter;
     transition-duration: .8s;
   }
@@ -696,12 +696,24 @@ html body{
     filter: invert(100%);
   }
 
+  .buttonhover{
+    position: absolute;
+    top: 55%;
+    right: 43%;
+    height: 17%;
+    width: 14%;
+    z-index: 2;
+    transform: scale(0);
+    background-color: rgba(0, 0, 255, .5);
+  }
+
   .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
     transition-property: visibility, transform, opacity;
     transition-duration: .8s;
   }
 
   .boomicon:hover ~ .circlemenu,
+  .boomicon:hover ~ .buttonhover,
   .boomicon:hover ~ .menuicons > a > .espaciosicon,
   .boomicon:hover ~ .menuicons > a > .mobiliarioicon,
   .boomicon:hover ~ .menuicons > a > .industrialicon,
@@ -718,7 +730,6 @@ html body{
     transform: scale(1);
     visibility: visible;
     opacity: 1;
-    z-index: 2;
   }
 
 
