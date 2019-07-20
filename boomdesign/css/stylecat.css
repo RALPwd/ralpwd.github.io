@@ -101,20 +101,25 @@ html body{
 
 @media all and (max-width: 768px){
   html body{
-    height: 177.867vw;
+    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow: initial;
+    display: flex;
+    align-items: center;
   }
 
   .maincontainer{
     /* background-image: url(../dummies/homemobile.jpg); */
-    background-image: url(../dummies/espaciosmobile.jpg);
+    /* background-image: url(../dummies/espaciosmobile.jpg); */
+    height: 177.867vw;
+    width: 100%;
     grid-template-areas: "menu" "content";
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     -ms-grid-rows: 82.5vw 1fr;
     grid-template-rows: 82.5vw 1fr;
-    /* background-position: 25% 50%; */
+    background-position: 25% 50%;
   }
 
   .menu{

@@ -16,12 +16,40 @@
   src: url('../fonts/Butler_Medium.otf');
 }
 
+/* @font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT.woff') format('woff');
+} */
+
+@font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: 100;
+  src: local('Bahnschrift Light'), url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift'), url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Bahnschrift Semibold'), url('../fonts/BAHNSCHRIFT.TTF');
+}
+
 *{
   padding: 0;
   margin: 0;
 }
 
-html body{ 
+html body{
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -34,160 +62,41 @@ html body{
 */
 
 .maincontainer{
-  /* background-image: url(../img/homeback.jpg); */
-  /* background-image: url(../dummies/home.jpg); */
+  background-image: url(../img/homeback.jpg);
+  /* background-image: url(../dummies/aboutus.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100%;
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  grid-template-areas: "menu title" "menu content";
-  -ms-grid-columns: 74.4vh 1fr;
+  grid-template-areas: "menu content";
   grid-template-columns: 74.4vh 1fr;
-  -ms-grid-rows: 22% 78%;
-  grid-template-rows: 22% 78%;
-}
-
-.back1, .back2, .back3, .back4, .back5, .back6, .back7{
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  background-position-y: 100%;
-}
-
-.back1{
-  background-image: url(../img/homebackground1.jpg);
-  opacity: 0;
-  animation: backchange1 30s infinite;
-}
-
-@keyframes backchange1 { /*+esta transcurre del principio al segundo 2.5*/
-  0%, 8.33% {opacity: 1;} /*0 a 2.5*/
-  13.33%, 100% {opacity: 0;} /*2.5 a 30*/
-}
-
-.back2{
-  background-image: url(../img/homebackground2.jpg);
-  opacity: 0;
-  animation: backchange2 30s infinite;
-}
-
-@keyframes backchange2 { /*esta transcurre del segundo 2.5 al 7.5*/
-  0%, 8.33% {opacity: 0;} /*0 a 2.5*/
-  13.33%, 25% {opacity: 1;} /*2.5 a 7.5*/
-  30%, 100% {opacity: 0;} /*7.5 a 30*/
-}
-
-.back3{
-  background-image: url(../img/homebackground3.jpg);
-  background-position-y: 60%;
-  opacity: 0;
-  animation: backchange3 30s infinite;
-}
-
-@keyframes backchange3 { /*esta transcurre del segundo 7.5 al 12.5*/
-  0%, 25% {opacity: 0;} /*0 a 7.5*/
-  30%, 41.66% {opacity: 1;} /*7.5 a 12.5*/
-  46.66%, 100% {opacity: 0;} /*12.5 a 30*/
-}
-
-.back4{
-  background-image: url(../img/homebackground4.jpg);
-  opacity: 0;
-  animation: backchange4 30s infinite;
-}
-
-@keyframes backchange4 { /*esta transcurre del segundo 12.5 al 17.5*/
-  0%, 41.66% {opacity: 0;} /*0 a 12.5*/
-  46.66%, 58.33% {opacity: 1;} /*12.5 a 17.5*/
-  63.33%, 100% {opacity: 0;} /*17.5 a 30*/
-}
-
-.back5{
-  background-image: url(../img/homebackground5.jpg);
-  opacity: 0;
-  animation: backchange5 30s infinite;
-}
-
-@keyframes backchange5 { /*esta transcurre del segundo 17.5 al 22.5*/
-  0%, 58.33% {opacity: 0;} /*0 a 17.5*/
-  63.33%, 75% {opacity: 1;} /*17.5 a 22.5*/
-  80%, 100% {opacity: 0;} /*22.5 a 30*/
-}
-
-.back6{
-  background-image: url(../img/homebackground6.jpg);
-  background-position-y: initial;
-  opacity: 0;
-  animation: backchange6 30s infinite;
-}
-
-@keyframes backchange6 { /*esta transcurre del segundo 22.5 al 27.5*/
-  0%, 75% {opacity: 0;} /*0 al 22.5*/
-  80%, 91.66% {opacity: 1;} /*22.5 al 27.5*/
-  96.66%, 100% {opacity: 0;} /*27.5 al 30*/
-}
-
-.back7{
-  background-image: url(../img/homebackground1.jpg);
-  opacity: 0;
-  animation: backchange7 30s infinite;
-}
-
-@keyframes backchange7 { /*esta transcurre del segundo 27.5 al segundo 30*/
-  0%, 91.66% {opacity: 0;} /*0 al 27.5*/
-  96.66%, 100% {opacity: 1;} /*27.5 al 30*/
 }
 
 .menu{
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   position: relative;
   grid-area: menu;
 }
 
 .menumobile{
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   position: relative;
   grid-area: menu;
   display: none;
 }
 
-.titlearea{
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: title;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
-}
-
 .content{
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   position: relative;
   grid-area: content;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+.contentmobile{
+  position: relative;
+  grid-area: content;
+  color: white;
+  display: none;
 }
 
 @media all and (max-width: 768px){
@@ -202,7 +111,7 @@ html body{
 
   .maincontainer{
     /* background-image: url(../dummies/homemobile.jpg); */
-    /* background-image: url(../dummies/espaciosmobile.jpg); */
+    /* background-image: url(../dummies/aboutusmobile.jpg); */
     height: 177.867vw;
     width: 100%;
     grid-template-areas: "menu" "content";
@@ -213,22 +122,12 @@ html body{
     background-position: 25% 50%;
   }
 
-  .back1, .back2, .back3, .back4, .back5, .back6, .back7{
-    background-position: 25% 50%;
-  }
-
   .menu{
     display: none;
   }
 
   .menumobile{
     display: block;
-  }
-
-  .titlearea{
-    box-sizing: border-box;
-    padding-bottom: 5.7%;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
   }
 }
 
@@ -682,7 +581,7 @@ html body{
 */
 
 .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
-  z-index: 0;
+  z-index: 1;
   transition-property: visibility, transform, opacity;
   transition-duration: .2s;
 }
@@ -730,50 +629,13 @@ html body{
 
 }
 
-
-
-
-
-/*
-#######################################################################################################
-##############################Estilos para el texto de la cabecera#####################################
-#######################################################################################################
-*/
-
-.titlearea h1{
-  font-family: Butler, serif;
-  color: white;
-  font-size: 4.73vh;
-  font-weight: 600;
-  width: 100%;
-}
-
-.titlearea p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: 100;
-  color: white;
-  font-size: 3.6vh;
-  width: 100%;
-}
-
-@media all and (max-width: 768px){
-  .titlearea h1{
-    font-size: 4.35vw;
-  }
-
-  .titlearea p{
-    font-size: 3.2vw;
-  }
-}
-
 /*
 #######################################################################################################
 ##################################Estilos para los créditos############################################
 #######################################################################################################
 */
 
-.content p{
+.credits{
   position: absolute;
   transform: rotate(-90deg);
   bottom: 14vh;
@@ -782,13 +644,208 @@ html body{
 }
 
 @media all and (max-width: 768px){
-  .content p{
+  .credits{
     bottom: 8vh;
     right: -5.6vh;
     font-size: 0.75vh;
   }
 }
 
-a > img:focus {
-  color: transparent;
+.aboutusback{
+  position: absolute;
+  height: 100%;
+  width: 78.9%;
+  left: 5%;
+  bottom: 0;
+  animation: sliderupdown 1.3s 1.9s backwards; /*Entra cuarto*/
+}
+
+.aboutus{
+  position: absolute;
+  left: 14%;
+  top: 9.8%;
+  width: 61%;
+  height: 82%;
+  /* background-color: rgba(0, 0, 255, .5) */
+  animation: sliderupdown 1.3s 2.2s backwards; /*Entra quinto*/
+}
+
+.aboutus h2 {
+  font-family: Butler;
+  font-size: 4.4vmin;
+  text-align: center;
+  line-height: 4.7vmin;
+}
+
+.aboutus p{
+  font-family: Bahnschrift;
+  font-weight: 100;
+  font-size: 1.9vmin;
+  text-align: justify;
+  box-sizing: border-box;
+  padding-top: 5%;
+  padding-bottom: 9%;
+}
+
+@media all and (max-width: 768px){
+  .aboutusback{
+    height: 121.5%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    animation: sliderbackenter 1.3s forwards; /*Entra primero*/
+    transform-origin: 50% 100%;
+  }
+
+  .aboutus{
+    left: 7%;
+    top: -12.2%;
+    width: 87%;
+    height: 94%;
+    /* background-color: rgba(0, 0, 255, .5); */
+    animation: sliderupdown 1.3s 1.3s backwards;
+  }
+
+  .aboutus h2 {
+    font-size: 4.9vmin;
+    line-height: 4.7vmin;
+  }
+
+  .aboutus p {
+    font-size: 2vmin;
+    padding-top: 5%;
+    padding-bottom: 9%;
+  }
+}
+
+/*
+#######################################################################################################
+#######################################El cochino slider###############################################
+#######################################################################################################
+*/
+
+.sliderback {
+  position: absolute;
+  height: 100%;
+  width: 89.6%;
+  left: 3.6%;
+  transform: scale(0);
+  transform-origin: 100% 50%;
+  animation: sliderbackenter 1.3s forwards; /*Entra primero*/
+  opacity: 1;
+}
+
+@keyframes sliderbackenter{
+  from{transform: scale(0); opacity: 0;}
+  to{transform: scale(1); opacity: 1;}
+}
+
+@keyframes sliderupdown{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.sliderbuttons{
+  position: absolute;
+  right: 9.3%;
+  top: 48.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3.1vw;
+  height: 3.5vh;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  animation: sliderupdown 1.3s 2.2s forwards; /*Entra quinto*/
+  opacity: 0;
+}
+
+.sliderbuttons img {
+  width: 100%;
+}
+
+.sliderbuttons:focus, .sliderbuttons img:focus{
+  outline: none;
+}
+
+
+@media all and (max-width: 768px){
+  .content{
+    display: none;
+  }
+
+  .contentmobile{
+    display: block;
+  }
+
+  .sliderback{
+    position: relative;
+    top: -21.3%;
+    left: 0;
+    width: 100%;
+    height: 67.7%;
+    transform-origin: 50% 100%;
+  }
+
+  .slidertextback{
+    position: absolute;
+    bottom: -0.2%;
+    height: 53.8%;
+    width: 100%;
+    animation: sliderupdown 1.3s 1.3s backwards; /*Entra segundo*/
+  }
+
+  .slidercontainer{
+    top: -19.9%;
+    left: 0;
+    width: 100%;
+    height: 59.1%;
+    display: initial;
+    /* background-color: rgba(0, 0, 255, .5); */
+  }
+
+  .slidermobile{
+    /* position: absolute; */
+    top: 0;
+    list-style: none;
+    animation: sliderupdown 1.3s 1.6s backwards; /*Entra tercero*/
+  }
+
+  .slidermobile > li > img{
+    width: 100%;
+    animation: sliderupdown 1.3s 2.2s backwards; /*Entra quinto*/
+  }
+
+  .sliderbuttonsmobile{
+    position: absolute;
+    right: 46.9%;
+    top: 41.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 6%;
+    height: 2.4%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    animation: sliderupdown 1.3s 2.2s forwards;
+    opacity: 0;
+  }
+
+  .sliderbuttonsmobile img {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .sliderbuttonsmobile:focus, .sliderbuttonsmobile img:focus{
+    outline: none;
+  }
+
+  .bottomtext{
+    left: 4.9%;
+    bottom: 9.8%;
+    width: 90.7%;
+    height: 24.2%;
+    font-size: 3.47vw;
+    line-height: 2.2vh;
+    animation: sliderupdown 1.3s 1.6s backwards; /*Entra tercero*/
+    /* background-color: rgba(0, 0, 255, .5) */
+  }
 }
