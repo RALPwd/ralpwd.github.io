@@ -957,9 +957,9 @@ input#opencontact:checked ~ .contactbubble{
 
 .categorytitle{
   position: absolute;
-  left: 57.1%;
+  left: 56.1%;
   bottom: 7.1%;
-  width: 49.3%;
+  width: 44%;
   height: 6.4%;
   color: black;
   font-family: Bahnschrift;

@@ -34,7 +34,7 @@ html body{
 */
 
 .maincontainer{
-  /* background-image: url(../img/homeback.jpg); */
+  background-image: url(../img/homebackground1.jpg);
   /* background-image: url(../dummies/contactus.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -274,7 +274,7 @@ html body{
   background: inherit;
   box-shadow: inset 0px 0px 2000px rgba(255,255,255,0.2);
   filter: blur(5px);
-  border: 1.5vh rgba(255, 255, 255, 0.2) solid;
+  border: 0.2vh rgba(0, 0, 0, 1) solid;
   box-sizing: border-box;
   animation: blowing .8s .8s backwards;
 }
