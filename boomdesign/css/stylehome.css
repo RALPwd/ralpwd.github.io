@@ -35,7 +35,7 @@ html body{
 
 .maincontainer{
   /* background-image: url(../img/homeback.jpg); */
-  background-image: url(../dummies/contactus.jpg);
+  /* background-image: url(../dummies/contactus.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -58,6 +58,16 @@ html body{
   width: 100%;
   background-position-y: 100%;
   background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 74.4vh 1fr;
+}
+
+.firsthalf{
+  background: inherit;
+  position: absolute;
+  grid-column-end: 2;
+  width: 100%;
+  height: 100%;
 }
 
 .back1{
@@ -256,14 +266,17 @@ html body{
 
 .pacman{
   position: absolute;
-  right: 62.1%;
-  top: 30.5%;
-  width: 20.2%;
-  height: 39.6%;
+  right: -1.2%;
+  top: 30.4%;
+  width: 53.092%;
+  height: 39.5%;
   border-radius: 50%;
   background: inherit;
-  box-shadow: inset 0px 0px 300px -200px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 2000px rgba(255,255,255,0.2);
   filter: blur(5px);
+  border: 1.5vh rgba(255, 255, 255, 0.2) solid;
+  box-sizing: border-box;
+  animation: blowing .8s .8s backwards;
 }
 
 .menuicons{
@@ -355,6 +368,24 @@ html body{
   bottom: -1.4%;
 }
 
+#opencontact{
+  position: absolute;
+  width: 31.5%;
+  height: 27.5%;
+  right: 26.6%;
+  bottom: -1.4%;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#opencontact:checked ~ .contactusbubble,
+#opencontact:checked ~ .contactsection{
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
 .contactbubble{
   position: absolute;
   width: 79%;
@@ -372,10 +403,11 @@ html body{
   height: 169.3%;
   right: -196%;
   bottom: -76%;
-  /* transform: scale(0);
-  transform-origin: 0% 54%; */
-  /* opacity: .0;
-  visibility: hidden; */
+  transition: .5s;
+  transform: scale(0);
+  transform-origin: 0% 54%;
+  opacity: .0;
+  visibility: hidden;
 }
 
 .contactsection{
@@ -385,8 +417,11 @@ html body{
   right: -196%;
   bottom: -76%;
   z-index: 2;
-  /* transform: scale(0);
-  transform-origin: 0% 54%; */
+  transition: .5s;
+  transform: scale(0);
+  transform-origin: 0% 54%;
+  opacity: .0;
+  visibility: hidden;
 }
 
 .contactsection a{
@@ -635,6 +670,10 @@ html body{
     transition-property: transform;
     transition-duration: .8s;
   }
+
+  .pacman{
+  display: none;
+  }
 }
 
 /*
@@ -798,11 +837,17 @@ html body{
 .mobiliarioicon:hover ~ .mobiliariobubble, .mobiliariobubble:hover,
 .industrialicon:hover ~ .industrialbubble, .industrialbubble:hover,
 .webicon:hover ~ .webbubble, .webbubble:hover,
-.contacticon:hover ~ .contactbubble, .contactbubble:hover,
+input#opencontact:hover ~ .contactbubble, .contactbubble:hover,
 .aboutusicon:hover ~ .aboutusbubble, .aboutusbubble:hover{
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+
+input#opencontact:checked ~ .contactbubble{
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media all and (max-width: 768px){

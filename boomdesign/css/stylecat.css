@@ -238,6 +238,25 @@ html body{
   bottom: -1.4%;
 }
 
+#opencontact{
+  position: absolute;
+  width: 31.5%;
+  height: 27.5%;
+  right: 26.6%;
+  bottom: -1.4%;
+  z-index: 4;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#opencontact:checked ~ .contactusbubble,
+#opencontact:checked ~ .contactsection{
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  z-index: 3;
+}
+
 .contactbubble{
   position: absolute;
   width: 79%;
@@ -247,6 +266,102 @@ html body{
   transform-origin: 0% -30%;
   opacity: .0;
   visibility: hidden;
+}
+
+.contactusbubble{
+  position: absolute;
+  width: 241%;
+  height: 169.3%;
+  right: -196%;
+  bottom: -76%;
+  transition: .5s;
+  transform: scale(0);
+  transform-origin: 0% 54%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.contactsection{
+  position: absolute;
+  width: 241%;
+  height: 169.3%;
+  right: -196%;
+  bottom: -76%;
+  z-index: 2;
+  transition: .5s;
+  transform: scale(0);
+  transform-origin: 0% 54%;
+  opacity: .0;
+  visibility: hidden;
+}
+
+.contactsection a{
+  color: white;
+  font-family: Bahnschrift;
+  text-decoration: none;
+}
+
+.socialicon{
+  position: absolute;
+  left: 43%;
+  width: 11.5%;
+  height: 11.5%;
+}
+
+#facebook{
+  top: 5.4%;
+}
+
+#facebooklink, #whatsapplink, #twitterlink, #instagramlink, #phonelink, #maillink{
+  position: absolute;
+  left: 55.8%;
+  font-size: 1.99vmin;
+  font-weight: 100;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+#facebooklink {
+  top: 10%;
+}
+
+#whatsapp{
+  top: 21%;
+}
+
+#whatsapplink{
+  top: 25.3%;
+}
+
+#twitter{
+  top: 36.5%;
+}
+
+#twitterlink{
+  top: 40.6%;
+}
+
+#instagram{
+  top: 51.5%;
+}
+
+#instagramlink{
+  top: 55.6%;
+}
+
+#phone{
+  top: 67.5%;
+}
+
+#phonelink{
+  top: 70.5%;
+}
+
+#mail{
+  top: 83%;
+}
+
+#maillink{
+  top: 87.4%;
 }
 
 .aboutusicon{
@@ -589,11 +704,17 @@ html body{
 .mobiliarioicon:hover ~ .mobiliariobubble, .mobiliariobubble:hover,
 .industrialicon:hover ~ .industrialbubble, .industrialbubble:hover,
 .webicon:hover ~ .webbubble, .webbubble:hover,
-.contacticon:hover ~ .contactbubble, .contactbubble:hover,
+input#opencontact:hover ~ .contactbubble, .contactbubble:hover,
 .aboutusicon:hover ~ .aboutusbubble, .aboutusbubble:hover{
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+
+input#opencontact:checked ~ .contactbubble{
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media all and (max-width: 768px){
