@@ -226,6 +226,8 @@ html body{
   .back1, .back2, .back3, .back4, .back5, .back6, .back7{
     background-position: 25% 50%;
     display: initial;
+    min-height: 100vh;
+    height: 100%;
   }
 
   .menu{

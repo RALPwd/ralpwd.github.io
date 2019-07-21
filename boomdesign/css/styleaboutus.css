@@ -106,11 +106,13 @@ html body{
     width: 100vw;
     overflow: initial;
     display: flex;
+    background-image: url(../img/backgroundcat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .maincontainer{
-    /* background-image: url(../dummies/homemobile.jpg); */
-    /* background-image: url(../dummies/aboutusmobile.jpg); */
+    background-image: none;
     height: 177.867vw;
     width: 100%;
     grid-template-areas: "menu" "content";
