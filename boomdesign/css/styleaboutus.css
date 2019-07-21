@@ -134,68 +134,6 @@ html body{
     font-family: Bahnschrift;
     text-decoration: none;
   }
-
-  .socialicon{
-    position: absolute;
-    left: 21%;
-    width: 13%;
-    height: 13%;
-  }
-
-  #facebook{
-    top: 4%;
-  }
-
-  #facebooklink, #whatsapplink, #twitterlink, #instagramlink, #phonelink, #maillink{
-    position: absolute;
-    left: 37.6%;
-    font-size: 3.12vmin;
-    font-weight: 100;
-  }
-
-  #facebooklink {
-    top: 9%;
-  }
-
-  #whatsapp{
-    top: 21%;
-  }
-
-  #whatsapplink{
-    top: 26.3%;
-  }
-
-  #twitter{
-    top: 38%
-  }
-
-  #twitterlink{
-    top: 43.3%;
-  }
-
-  #instagram{
-    top: 55%;
-  }
-
-  #instagramlink{
-    top: 59.6%;
-  }
-
-  #phone{
-    top: 72%;
-  }
-
-  #phonelink{
-    top: 76.6%;
-  }
-
-  #mail{
-    top: 89%;
-  }
-
-  #maillink{
-    top: 95%;
-  }
 }
 
 /*
@@ -1035,5 +973,67 @@ input#opencontact:checked ~ .contactbubble{
     line-height: 2.2vh;
     animation: sliderupdown 1.3s 1.6s backwards; /*Entra tercero*/
     /* background-color: rgba(0, 0, 255, .5) */
+  }
+
+  .socialicon{
+    position: absolute;
+    left: 21%;
+    width: 13%;
+    height: 13%;
+  }
+
+  #facebook{
+    top: 4%;
+  }
+
+  #facebooklink, #whatsapplink, #twitterlink, #instagramlink, #phonelink, #maillink{
+    position: absolute;
+    left: 37.6%;
+    font-size: 3.12vmin;
+    font-weight: 100;
+  }
+
+  #facebooklink {
+    top: 9%;
+  }
+
+  #whatsapp{
+    top: 21%;
+  }
+
+  #whatsapplink{
+    top: 26.3%;
+  }
+
+  #twitter{
+    top: 38%
+  }
+
+  #twitterlink{
+    top: 43.3%;
+  }
+
+  #instagram{
+    top: 55%;
+  }
+
+  #instagramlink{
+    top: 59.6%;
+  }
+
+  #phone{
+    top: 72%;
+  }
+
+  #phonelink{
+    top: 76.6%;
+  }
+
+  #mail{
+    top: 89%;
+  }
+
+  #maillink{
+    top: 95%;
   }
 }
