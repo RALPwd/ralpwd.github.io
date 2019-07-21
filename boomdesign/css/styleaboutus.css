@@ -62,7 +62,7 @@ html body{
 */
 
 .maincontainer{
-  background-image: url(../img/homeback.jpg);
+  background-image: url(../img/backgroundcat.jpg);
   /* background-image: url(../dummies/contactusmobile.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +228,7 @@ html body{
 
 .espaciosicon, .mobiliarioicon, .industrialicon, .webicon, .contacticon, .aboutusicon, .homeicon{
   position: absolute;
-  z-index: 1;
+  z-index: 4;
 }
 
 .espaciosicon{
@@ -312,7 +312,7 @@ html body{
   height: 27.5%;
   right: 26.6%;
   bottom: -1.4%;
-  z-index: 4;
+  z-index: 5;
   opacity: 0;
   cursor: pointer;
 }
@@ -763,7 +763,7 @@ html body{
 */
 
 .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
-  z-index: 1;
+  z-index: 4;
   transition-property: visibility, transform, opacity;
   transition-duration: .2s;
 }

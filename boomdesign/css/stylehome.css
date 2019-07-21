@@ -290,7 +290,7 @@ html body{
 
 .espaciosicon, .mobiliarioicon, .industrialicon, .webicon, .contacticon, .aboutusicon, .homeicon{
   position: absolute;
-  z-index: 1;
+  z-index: 4;
 }
 
 .espaciosicon{
@@ -374,7 +374,7 @@ html body{
   height: 27.5%;
   right: 26.6%;
   bottom: -1.4%;
-  z-index: 3;
+  z-index: 5;
   opacity: 0;
   cursor: pointer;
 }
@@ -828,7 +828,7 @@ html body{
 */
 
 .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
-  z-index: 0;
+  z-index: 4;
   transition-property: visibility, transform, opacity;
   transition-duration: .2s;
 }
