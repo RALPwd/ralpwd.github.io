@@ -35,7 +35,7 @@ html body{
 
 .maincontainer{
   background-image: url(../img/homebackground1.jpg);
-  /* background-image: url(../dummies/contactus.jpg); */
+  /* background-image: url(../dummies/home.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -43,7 +43,7 @@ html body{
   width: 100%;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "menu title" "menu content";
+      grid-template-areas: "menu title" "menu content";
   -ms-grid-columns: 74.4vh 1fr;
   grid-template-columns: 74.4vh 1fr;
   -ms-grid-rows: 22% 78%;
@@ -58,13 +58,16 @@ html body{
   width: 100%;
   background-position-y: 100%;
   background-attachment: fixed;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 74.4vh 1fr;
   grid-template-columns: 74.4vh 1fr;
 }
 
 .firsthalf{
   background: inherit;
   position: absolute;
+  -ms-grid-column-span: 2;
   grid-column-end: 2;
   width: 100%;
   height: 100%;
@@ -73,7 +76,13 @@ html body{
 .back1{
   background-image: url(../img/homebackground1.jpg);
   opacity: 0;
-  animation: backchange1 30s infinite;
+  -webkit-animation: backchange1 30s infinite;
+          animation: backchange1 30s infinite;
+}
+
+@-webkit-keyframes backchange1 { /*+esta transcurre del principio al segundo 2.5*/
+  0%, 8.33% {opacity: 1;} /*0 a 2.5*/
+  13.33%, 100% {opacity: 0;} /*2.5 a 30*/
 }
 
 @keyframes backchange1 { /*+esta transcurre del principio al segundo 2.5*/
@@ -84,7 +93,14 @@ html body{
 .back2{
   background-image: url(../img/homebackground2.jpg);
   opacity: 0;
-  animation: backchange2 30s infinite;
+  -webkit-animation: backchange2 30s infinite;
+          animation: backchange2 30s infinite;
+}
+
+@-webkit-keyframes backchange2 { /*esta transcurre del segundo 2.5 al 7.5*/
+  0%, 8.33% {opacity: 0;} /*0 a 2.5*/
+  13.33%, 25% {opacity: 1;} /*2.5 a 7.5*/
+  30%, 100% {opacity: 0;} /*7.5 a 30*/
 }
 
 @keyframes backchange2 { /*esta transcurre del segundo 2.5 al 7.5*/
@@ -97,7 +113,14 @@ html body{
   background-image: url(../img/homebackground3.jpg);
   background-position-y: 60%;
   opacity: 0;
-  animation: backchange3 30s infinite;
+  -webkit-animation: backchange3 30s infinite;
+          animation: backchange3 30s infinite;
+}
+
+@-webkit-keyframes backchange3 { /*esta transcurre del segundo 7.5 al 12.5*/
+  0%, 25% {opacity: 0;} /*0 a 7.5*/
+  30%, 41.66% {opacity: 1;} /*7.5 a 12.5*/
+  46.66%, 100% {opacity: 0;} /*12.5 a 30*/
 }
 
 @keyframes backchange3 { /*esta transcurre del segundo 7.5 al 12.5*/
@@ -109,7 +132,14 @@ html body{
 .back4{
   background-image: url(../img/homebackground4.jpg);
   opacity: 0;
-  animation: backchange4 30s infinite;
+  -webkit-animation: backchange4 30s infinite;
+          animation: backchange4 30s infinite;
+}
+
+@-webkit-keyframes backchange4 { /*esta transcurre del segundo 12.5 al 17.5*/
+  0%, 41.66% {opacity: 0;} /*0 a 12.5*/
+  46.66%, 58.33% {opacity: 1;} /*12.5 a 17.5*/
+  63.33%, 100% {opacity: 0;} /*17.5 a 30*/
 }
 
 @keyframes backchange4 { /*esta transcurre del segundo 12.5 al 17.5*/
@@ -121,7 +151,14 @@ html body{
 .back5{
   background-image: url(../img/homebackground5.jpg);
   opacity: 0;
-  animation: backchange5 30s infinite;
+  -webkit-animation: backchange5 30s infinite;
+          animation: backchange5 30s infinite;
+}
+
+@-webkit-keyframes backchange5 { /*esta transcurre del segundo 17.5 al 22.5*/
+  0%, 58.33% {opacity: 0;} /*0 a 17.5*/
+  63.33%, 75% {opacity: 1;} /*17.5 a 22.5*/
+  80%, 100% {opacity: 0;} /*22.5 a 30*/
 }
 
 @keyframes backchange5 { /*esta transcurre del segundo 17.5 al 22.5*/
@@ -134,7 +171,14 @@ html body{
   background-image: url(../img/homebackground6.jpg);
   background-position-y: initial;
   opacity: 0;
-  animation: backchange6 30s infinite;
+  -webkit-animation: backchange6 30s infinite;
+          animation: backchange6 30s infinite;
+}
+
+@-webkit-keyframes backchange6 { /*esta transcurre del segundo 22.5 al 27.5*/
+  0%, 75% {opacity: 0;} /*0 al 22.5*/
+  80%, 91.66% {opacity: 1;} /*22.5 al 27.5*/
+  96.66%, 100% {opacity: 0;} /*27.5 al 30*/
 }
 
 @keyframes backchange6 { /*esta transcurre del segundo 22.5 al 27.5*/
@@ -146,7 +190,13 @@ html body{
 .back7{
   background-image: url(../img/homebackground1.jpg);
   opacity: 0;
-  animation: backchange7 30s infinite;
+  -webkit-animation: backchange7 30s infinite;
+          animation: backchange7 30s infinite;
+}
+
+@-webkit-keyframes backchange7 { /*esta transcurre del segundo 27.5 al segundo 30*/
+  0%, 91.66% {opacity: 0;} /*0 al 27.5*/
+  96.66%, 100% {opacity: 1;} /*27.5 al 30*/
 }
 
 @keyframes backchange7 { /*esta transcurre del segundo 27.5 al segundo 30*/
@@ -207,15 +257,17 @@ html body{
     height: 100%;
     width: 100vw;
     overflow: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .maincontainer{
     background-image: url(../img/homebackground1.jpg);
-    /* background-image: url(../dummies/espaciosmobile.jpg); */
+    /* background-image: url(../dummies/homemobile.jpg); */
     height: 177.867vw;
     width: 100%;
-    grid-template-areas: "menu" "content";
+        grid-template-areas: "menu" "content";
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     -ms-grid-rows: 82.5vw 1fr;
@@ -242,7 +294,8 @@ html body{
     position: absolute;
     bottom: 26.7%;
     left: 7.6%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-bottom: 5.7%;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
   }
@@ -275,11 +328,15 @@ html body{
   height: 39.5%;
   border-radius: 50%;
   background: inherit;
-  box-shadow: inset 0px 0px 2000px rgba(255,255,255,0.2);
-  filter: blur(5px);
+  -webkit-box-shadow: inset 0px 0px 2000px rgba(255,255,255,0.2);
+          box-shadow: inset 0px 0px 2000px rgba(255,255,255,0.2);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   border: 0.2vh rgba(0, 0, 0, 1) solid;
-  box-sizing: border-box;
-  animation: blowing .8s .8s backwards;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: blowing .8s .8s backwards;
+          animation: blowing .8s .8s backwards;
 }
 
 .menuicons{
@@ -304,11 +361,15 @@ html body{
 
 .espaciosbubble{
   position: absolute;
-  width: 94%;
-  right: 11.4%;
+  width: 140%;
+  right: -35.1%;
   top: -36.3%;
-  transform: scale(0);
-  transform-origin: 20% 100%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 9.8% 95%;
+      -ms-transform-origin: 9.8% 95%;
+          transform-origin: 9.8% 95%;
   opacity: .0;
   visibility: hidden;
 }
@@ -321,11 +382,15 @@ html body{
 
 .mobiliariobubble{
   position: absolute;
-  width: 100%;
-  right: -54.1%;
+  width: 140%;
+  right: -94.2%;
   top: -19.6%;
-  transform: scale(0);
-  transform-origin: -8% 140%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 2% 81%;
+      -ms-transform-origin: 2% 81%;
+          transform-origin: 2% 81%;
   opacity: .0;
   visibility: hidden;
 }
@@ -339,11 +404,15 @@ html body{
 
 .industrialbubble{
   position: absolute;
-  width: 93%;
-  right: -89.8%;
-  top: 13.6%;
-  transform: scale(0);
-  transform-origin: -24% 95%;
+  width: 110%;
+  right: -106.9%;
+  top: 14%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 2.8% 83%;
+      -ms-transform-origin: 2.8% 83%;
+          transform-origin: 2.8% 83%;
   opacity: .0;
   visibility: hidden;
 }
@@ -356,11 +425,15 @@ html body{
 
 .webbubble{
   position: absolute;
-  width: 103%;
-  right: -99.8%;
-  bottom: 11.8%;
-  transform: scale(0);
-  transform-origin: -15% 15%;
+  width: 105%;
+  right: -102.3%;
+  bottom: 12.8%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 2% 10%;
+      -ms-transform-origin: 2% 10%;
+          transform-origin: 2% 10%;
   opacity: .0;
   visibility: hidden;
 }
@@ -384,18 +457,24 @@ html body{
 
 #opencontact:checked ~ .contactusbubble,
 #opencontact:checked ~ .contactsection{
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
   visibility: visible;
 }
 
 .contactbubble{
   position: absolute;
-  width: 79%;
-  right: -32.8%;
-  bottom: -21.2%;
-  transform: scale(0);
-  transform-origin: 0% -30%;
+  width: 81%;
+  right: -33.8%;
+  bottom: -28.3%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 5% 12%;
+      -ms-transform-origin: 5% 12%;
+          transform-origin: 5% 12%;
   opacity: .0;
   visibility: hidden;
 }
@@ -406,9 +485,15 @@ html body{
   height: 169.3%;
   right: -196%;
   bottom: -76%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
-  transform: scale(0);
-  transform-origin: 0% 54%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 0% 54%;
+      -ms-transform-origin: 0% 54%;
+          transform-origin: 0% 54%;
   opacity: .0;
   visibility: hidden;
 }
@@ -420,9 +505,15 @@ html body{
   right: -196%;
   bottom: -76%;
   z-index: 2;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
-  transform: scale(0);
-  transform-origin: 0% 54%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 0% 54%;
+      -ms-transform-origin: 0% 54%;
+          transform-origin: 0% 54%;
   opacity: .0;
   visibility: hidden;
 }
@@ -504,11 +595,15 @@ html body{
 
 .aboutusbubble{
   position: absolute;
-  width: 94.2%;
-  right: 11.1%;
-  bottom: -38.5%;
-  transform: scale(0);
-  transform-origin: 25% 0%;
+  width: 100%;
+  right: 11.9%;
+  bottom: -64.5%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 20.5% 5.5%;
+      -ms-transform-origin: 20.5% 5.5%;
+          transform-origin: 20.5% 5.5%;
   opacity: .0;
   visibility: hidden;
 }
@@ -537,8 +632,14 @@ html body{
     width: 16.3%;
     left: 42.1%;
     top: 54%;
+    -webkit-transition-property: -webkit-filter;
+    transition-property: -webkit-filter;
+    -o-transition-property: filter;
     transition-property: filter;
-    transition-duration: .8s;
+    transition-property: filter, -webkit-filter;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   #openmenu{
@@ -555,9 +656,17 @@ html body{
     right: 36%;
     top: 65.5%;
     width: 28%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .menuicons{
@@ -571,30 +680,46 @@ html body{
     width: 27.5%;
     right: -2.5%;
     top: 27.2%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .espaciosbubble{
-    width: 98%;
-    right: -95%;
-    top: 28.7%;
+    width: 65%;
+    right: -62%;
+    top: 27.7%;
   }
 
   .mobiliarioicon{
     width: 27.5%;
     right: -1.3%;
     top: 55%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .mobiliariobubble{
-    width: 100%;
-    right: -94.6%;
-    top: 56.4%;
+    width: 69%;
+    right: -64.6%;
+    top: 55.4%;
   }
 
   .industrialicon{
@@ -602,14 +727,22 @@ html body{
     right: 20.3%;
     top: initial;
     bottom: -2.3%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .industrialbubble{
-    width: 98.2%;
-    right: -72%;
+    width: 68.2%;
+    right: -41%;
     top: initial;
     bottom: 4.1%;
   }
@@ -620,16 +753,24 @@ html body{
     top: initial;
     bottom: -2.2%;
     left: 21.8%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .webbubble{
-    width: 98.5%;
+    width: 84.5%;
     right: initial;
-    left: -69%;
-    bottom: 3.7%;
+    left: -56%;
+    bottom: 2.7%;
   }
 
   .contacticon{
@@ -637,15 +778,23 @@ html body{
     right: initial;
     left: -0.9%;
     bottom: 20.8%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .contactbubble{
-    width: 98.2%;
+    width: 68.2%;
     right: initial;
-    left: -91.9%;
+    left: -62.9%;
     bottom: 27.7%;
   }
 
@@ -654,24 +803,40 @@ html body{
     right: initial;
     left: -2%;
     bottom: 48.2%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .aboutusbubble{
-    width: 99%;
-    right: 94.4%;
-    bottom: 55.5%;
+    width: 90%;
+    right: 95.4%;
+    bottom: 54.5%;
   }
 
   .homeicon{
     width: 17.6%;
     right: 41%;
     top: 46.8%;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-duration: .8s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   .pacman{
@@ -686,11 +851,18 @@ html body{
 */
 
 .maincontainer{
-  animation: starting .8s;
+  -webkit-animation: starting .8s;
+          animation: starting .8s;
 }
 
 .titlearea{
-  animation: starting .8s 2.8s backwards;
+  -webkit-animation: starting .8s 2.8s backwards;
+          animation: starting .8s 2.8s backwards;
+}
+
+@-webkit-keyframes starting{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 @keyframes starting{
@@ -699,11 +871,18 @@ html body{
 }
 
 .triangleback{
-  animation: entering .8s .4s backwards;
+  -webkit-animation: entering .8s .4s backwards;
+          animation: entering .8s .4s backwards;
 }
 
 .trianglefront{
-  animation: entering .8s .8s backwards;
+  -webkit-animation: entering .8s .8s backwards;
+          animation: entering .8s .8s backwards;
+}
+
+@-webkit-keyframes entering{
+  from{left: -100%;}
+  to{left: 0;}
 }
 
 @keyframes entering{
@@ -712,7 +891,13 @@ html body{
 }
 
 .logoboom{
-  animation: enteringlogo 1.6s 1.6s backwards;
+  -webkit-animation: enteringlogo 1.6s 1.6s backwards;
+          animation: enteringlogo 1.6s 1.6s backwards;
+}
+
+@-webkit-keyframes enteringlogo{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 @keyframes enteringlogo{
@@ -721,106 +906,152 @@ html body{
 }
 
 .circlemenu{
-  animation: blowing .8s .8s backwards;
+  -webkit-animation: blowing .8s .8s backwards;
+          animation: blowing .8s .8s backwards;
 }
 
 .espaciosicon{
-  animation: blowing .8s 1s backwards;
+  -webkit-animation: blowing .8s 1s backwards;
+          animation: blowing .8s 1s backwards;
 }
 
 .mobiliarioicon{
-  animation: blowing .8s 1.2s backwards;
+  -webkit-animation: blowing .8s 1.2s backwards;
+          animation: blowing .8s 1.2s backwards;
 }
 
 .industrialicon{
-  animation: blowing .8s 1.4s backwards;
+  -webkit-animation: blowing .8s 1.4s backwards;
+          animation: blowing .8s 1.4s backwards;
 }
 
 .webicon{
-  animation: blowing .8s 1.6s backwards;
+  -webkit-animation: blowing .8s 1.6s backwards;
+          animation: blowing .8s 1.6s backwards;
 }
 
 .contacticon{
-  animation: blowing .8s 1.8s backwards;
+  -webkit-animation: blowing .8s 1.8s backwards;
+          animation: blowing .8s 1.8s backwards;
 }
 
 .aboutusicon{
-  animation: blowing .8s 2s backwards;
+  -webkit-animation: blowing .8s 2s backwards;
+          animation: blowing .8s 2s backwards;
 }
 
 .homeicon{
-  animation: blowing .8s 2.2s backwards;
+  -webkit-animation: blowing .8s 2.2s backwards;
+          animation: blowing .8s 2.2s backwards;
+}
+
+@-webkit-keyframes blowing{
+  from{-webkit-transform: scale(0);transform: scale(0);}
+  to{-webkit-transform: scale(1);transform: scale(1);}
 }
 
 @keyframes blowing{
-  from{transform: scale(0);}
-  to{transform: scale(1);}
+  from{-webkit-transform: scale(0);transform: scale(0);}
+  to{-webkit-transform: scale(1);transform: scale(1);}
 }
 
 @media all and (max-width: 768px){
+  @-webkit-keyframes entering{
+    from{top: -100%;}
+    to{left: 0;}
+  }
   @keyframes entering{
     from{top: -100%;}
     to{left: 0;}
   }
 
   .espaciosbubble, .mobiliariobubble, .industrialbubble{
-    transform-origin: -14% 70%;
+    -webkit-transform-origin: -14% 70%;
+        -ms-transform-origin: -14% 70%;
+            transform-origin: -14% 70%;
   }
 
   .webbubble, .contactbubble, .aboutusbubble{
-    transform-origin: 112% 62%;
+    -webkit-transform-origin: 112% 62%;
+        -ms-transform-origin: 112% 62%;
+            transform-origin: 112% 62%;
   }
 
   .boomicon{
-    animation: blowing1 2s 1s backwards;
+    -webkit-animation: blowing1 2s 1s backwards;
+            animation: blowing1 2s 1s backwards;
+  }
+
+  @-webkit-keyframes blowing1{
+    0% {-webkit-transform: scale(0);transform: scale(0); -webkit-filter: invert(0%); filter: invert(0%);}
+    20%, 80% {-webkit-transform: scale(1);transform: scale(1); -webkit-filter: invert(100%); filter: invert(100%);}
+    100%{-webkit-transform: scale(1);transform: scale(1); -webkit-filter: invert(0%); filter: invert(0%);}
   }
 
   @keyframes blowing1{
-    0% {transform: scale(0); filter: invert(0%);}
-    20%, 80% {transform: scale(1); filter: invert(100%);}
-    100%{transform: scale(1); filter: invert(0%);}
+    0% {-webkit-transform: scale(0);transform: scale(0); -webkit-filter: invert(0%); filter: invert(0%);}
+    20%, 80% {-webkit-transform: scale(1);transform: scale(1); -webkit-filter: invert(100%); filter: invert(100%);}
+    100%{-webkit-transform: scale(1);transform: scale(1); -webkit-filter: invert(0%); filter: invert(0%);}
   }
 
   .circlemenu{
-    animation: blowing2 3s 1.1s;
+    -webkit-animation: blowing2 3s 1.1s;
+            animation: blowing2 3s 1.1s;
+  }
+
+  @-webkit-keyframes blowing2{
+    0%, 100%{-webkit-transform: scale(0);transform: scale(0);}
+    15%, 85% {-webkit-transform: scale(1);transform: scale(1);}
   }
 
   @keyframes blowing2{
-    0%, 100%{transform: scale(0);}
-    15%, 85% {transform: scale(1);}
+    0%, 100%{-webkit-transform: scale(0);transform: scale(0);}
+    15%, 85% {-webkit-transform: scale(1);transform: scale(1);}
   }
 
   .espaciosicon, .espaciosbubble{
-    animation: blowing3 2s 1.3s;
+    -webkit-animation: blowing3 2s 1.3s;
+            animation: blowing3 2s 1.3s;
   }
 
   .mobiliarioicon, .mobiliariobubble{
-    animation: blowing3 2s 1.4s;
+    -webkit-animation: blowing3 2s 1.4s;
+            animation: blowing3 2s 1.4s;
   }
 
   .industrialicon, .industrialbubble{
-    animation: blowing3 2s 1.5s;
+    -webkit-animation: blowing3 2s 1.5s;
+            animation: blowing3 2s 1.5s;
   }
 
   .webicon, .webbubble{
-    animation: blowing3 2s 1.6s;
+    -webkit-animation: blowing3 2s 1.6s;
+            animation: blowing3 2s 1.6s;
   }
 
   .contacticon, .contactbubble{
-    animation: blowing3 2s 1.7s;
+    -webkit-animation: blowing3 2s 1.7s;
+            animation: blowing3 2s 1.7s;
   }
 
   .aboutusicon, .aboutusbubble{
-    animation: blowing3 2s 1.8s;
+    -webkit-animation: blowing3 2s 1.8s;
+            animation: blowing3 2s 1.8s;
   }
 
   .homeicon{
-    animation: blowing3 2s 1.9s;
+    -webkit-animation: blowing3 2s 1.9s;
+            animation: blowing3 2s 1.9s;
+  }
+
+  @-webkit-keyframes blowing3{
+    0%, 100%{-webkit-transform: scale(0);transform: scale(0); opacity: 0; visibility: hidden;}
+    20%, 80% {-webkit-transform: scale(1);transform: scale(1); opacity: 1; visibility: visible;}
   }
 
   @keyframes blowing3{
-    0%, 100%{transform: scale(0); opacity: 0; visibility: hidden;}
-    20%, 80% {transform: scale(1); opacity: 1; visibility: visible;}
+    0%, 100%{-webkit-transform: scale(0);transform: scale(0); opacity: 0; visibility: hidden;}
+    20%, 80% {-webkit-transform: scale(1);transform: scale(1); opacity: 1; visibility: visible;}
   }
 }
 
@@ -832,8 +1063,14 @@ html body{
 
 .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
   z-index: 4;
+  -webkit-transition-property: visibility, opacity, -webkit-transform;
+  transition-property: visibility, opacity, -webkit-transform;
+  -o-transition-property: visibility, transform, opacity;
   transition-property: visibility, transform, opacity;
-  transition-duration: .2s;
+  transition-property: visibility, transform, opacity, -webkit-transform;
+  -webkit-transition-duration: .2s;
+       -o-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 .espaciosicon:hover ~ .espaciosbubble, .espaciosbubble:hover,
@@ -844,23 +1081,34 @@ input#opencontact:hover ~ .contactbubble, .contactbubble:hover,
 .aboutusicon:hover ~ .aboutusbubble, .aboutusbubble:hover{
   visibility: visible;
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 input#opencontact:checked ~ .contactbubble{
-  transform: scale(0);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   opacity: 0;
   visibility: hidden;
 }
 
 @media all and (max-width: 768px){
   input#openmenu:checked ~ .boomicon{
-    filter: invert(100%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
 
   .espaciosbubble, .mobiliariobubble, .industrialbubble, .webbubble, .contactbubble, .aboutusbubble{
+    -webkit-transition-property: visibility, opacity, -webkit-transform;
+    transition-property: visibility, opacity, -webkit-transform;
+    -o-transition-property: visibility, transform, opacity;
     transition-property: visibility, transform, opacity;
-    transition-duration: .8s;
+    transition-property: visibility, transform, opacity, -webkit-transform;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
   input#openmenu:checked ~ .circlemenu,
@@ -877,17 +1125,13 @@ input#opencontact:checked ~ .contactbubble{
   input#openmenu:checked ~ .menuicons > a > .contactbubble,
   input#openmenu:checked ~ .menuicons > a > .aboutusbubble,
   input#openmenu:checked ~ .menuicons > a > .homeicon{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     visibility: visible;
     opacity: 1;
   }
-
-
 }
-
-
-
-
 
 /*
 #######################################################################################################

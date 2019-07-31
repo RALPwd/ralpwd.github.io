@@ -172,11 +172,11 @@ html body{
 
 .espaciosbubble{
   position: absolute;
-  width: 94%;
-  right: 11.4%;
+  width: 140%;
+  right: -35.1%;
   top: -36.3%;
   transform: scale(0);
-  transform-origin: 20% 100%;
+  transform-origin: 9.8% 95%;
   opacity: .0;
   visibility: hidden;
 }
@@ -189,11 +189,11 @@ html body{
 
 .mobiliariobubble{
   position: absolute;
-  width: 100%;
-  right: -54.1%;
+  width: 140%;
+  right: -94.2%;
   top: -19.6%;
   transform: scale(0);
-  transform-origin: -8% 140%;
+  transform-origin: 2% 81%;
   opacity: .0;
   visibility: hidden;
 }
@@ -207,11 +207,11 @@ html body{
 
 .industrialbubble{
   position: absolute;
-  width: 93%;
-  right: -89.8%;
-  top: 13.6%;
+  width: 110%;
+  right: -106.9%;
+  top: 14%;
   transform: scale(0);
-  transform-origin: -24% 95%;
+  transform-origin: 2.8% 83%;
   opacity: .0;
   visibility: hidden;
 }
@@ -224,11 +224,11 @@ html body{
 
 .webbubble{
   position: absolute;
-  width: 103%;
-  right: -99.8%;
-  bottom: 11.8%;
+  width: 105%;
+  right: -102.3%;
+  bottom: 12.8%;
   transform: scale(0);
-  transform-origin: -15% 15%;
+  transform-origin: 2% 10%;
   opacity: .0;
   visibility: hidden;
 }
@@ -260,11 +260,11 @@ html body{
 
 .contactbubble{
   position: absolute;
-  width: 79%;
-  right: -32.8%;
-  bottom: -21.2%;
+  width: 81%;
+  right: -33.8%;
+  bottom: -28.3%;
   transform: scale(0);
-  transform-origin: 0% -30%;
+  transform-origin: 5% 12%;
   opacity: .0;
   visibility: hidden;
 }
@@ -373,11 +373,11 @@ html body{
 
 .aboutusbubble{
   position: absolute;
-  width: 94.2%;
-  right: 11.1%;
-  bottom: -38.5%;
+  width: 100%;
+  right: 11.9%;
+  bottom: -64.5%;
   transform: scale(0);
-  transform-origin: 25% 0%;
+  transform-origin: 20.5% 5.5%;
   opacity: .0;
   visibility: hidden;
 }
@@ -446,9 +446,9 @@ html body{
   }
 
   .espaciosbubble{
-    width: 98%;
-    right: -95%;
-    top: 28.7%;
+    width: 65%;
+    right: -62%;
+    top: 27.7%;
   }
 
   .mobiliarioicon{
@@ -461,9 +461,9 @@ html body{
   }
 
   .mobiliariobubble{
-    width: 100%;
-    right: -94.6%;
-    top: 56.4%;
+    width: 69%;
+    right: -64.6%;
+    top: 55.4%;
   }
 
   .industrialicon{
@@ -477,8 +477,8 @@ html body{
   }
 
   .industrialbubble{
-    width: 98.2%;
-    right: -72%;
+    width: 68.2%;
+    right: -41%;
     top: initial;
     bottom: 4.1%;
   }
@@ -495,10 +495,10 @@ html body{
   }
 
   .webbubble{
-    width: 98.5%;
+    width: 84.5%;
     right: initial;
-    left: -69%;
-    bottom: 3.7%;
+    left: -56%;
+    bottom: 2.7%;
   }
 
   .contacticon{
@@ -512,9 +512,9 @@ html body{
   }
 
   .contactbubble{
-    width: 98.2%;
+    width: 68.2%;
     right: initial;
-    left: -91.9%;
+    left: -62.9%;
     bottom: 27.7%;
   }
 
@@ -529,9 +529,9 @@ html body{
   }
 
   .aboutusbubble{
-    width: 99%;
-    right: 94.4%;
-    bottom: 55.5%;
+    width: 90%;
+    right: 95.4%;
+    bottom: 54.5%;
   }
 
   .homeicon{
