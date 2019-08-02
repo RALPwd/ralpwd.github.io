@@ -853,7 +853,7 @@ html body{
             transition-duration: .8s;
   }
 
-  .pacman{
+  .pacman, .pacmanwrapper{
   display: none;
   }
 }
