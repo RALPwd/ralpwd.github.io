@@ -8,6 +8,10 @@
   <style>
   @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
+  html{
+    scroll-behavior: smooth;
+  }
+
   body{
     overflow-x: hidden;
   }
@@ -16,6 +20,8 @@
     padding: 0;
     margin: 0;
   }
+
+  /* sección de inicio */
   .main{
     background-image: url(./dummies/edificio.jpg);
     height: 100vh;
@@ -69,7 +75,7 @@
   .mainmenu img{
     padding-top: 10%;
     width: auto;
-    height: 33%;
+    height: 33vh;
   }
 
   .menu{
@@ -78,6 +84,7 @@
     text-align: center;
     font-size: 3.5vmin;
     padding-top: 10%;
+    text-transform: uppercase;
   }
 
   .menu ul li{
@@ -98,14 +105,41 @@
     height: 120vw;
   }
 
+  /* sección de quienes somos */
+
   .aboutus{
     background-image: url(./dummies/reception.jpg);
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-areas: "menu about";
+    grid-template-columns: 50% 50%;
+  }
+
+  .about{
+    grid-area: about;
+    background-color: rgba(255, 255, 255, .9);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  .abouttext{
+    width: 90%;
+    padding-top: 10%;
+  }
+
+  .abouttext p{
+    font-size: 3vmin;
+  }
+
+  .abouttext ul{
+    font-size: 3vmin;
+    padding-left: 3%;
   }
 
   .barbasco{
@@ -131,7 +165,7 @@
 </head>
 <body>
   <!-- Seccion de inicio -->
-  <div class="main">
+  <div class="main" id="inicio">
     <div class="maincontent">
       <div class="welcome">
         <p>
@@ -147,8 +181,8 @@
       <img src="dummies/logo.jpg" alt="">
       <div class="menu">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">¿Quienes somos?</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienessomos">¿Quienes somos?</a></li>
           <li><a href="#">Barbasco</a></li>
           <li><a href="#">Nuestros apartamentos</a></li>
           <li><a href="#">Contacto</a></li>
@@ -158,10 +192,39 @@
     </div>
   </div>
   <div class="intersection">
-
   </div>
   <!-- Sección de quienes somos -->
-  <div class="aboutus"></div>
+  <div class="aboutus" id="quienessomos">
+    <div class="mainmenu">
+      <img src="dummies/logo.jpg" alt="">
+      <div class="menu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienessomos">¿Quienes somos?</a></li>
+          <li><a href="#">Barbasco</a></li>
+          <li><a href="#">Nuestros apartamentos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Asociados</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="about">
+      <div class="abouttext">
+        <p>Somos una empresa dedicada a la gerencia, diseño, construcción y venta de proyectos de inmobiliarios y afines. Actualmente trabajamos para brindarle el mejor producto a quienes depositan su confianza en nuestros proyectos. Día a día nos esforzamos por seguir generando proyectos innovadores y de gran calidad con el fin de posicionarnos entre las constructoras y desarrolladoras de proyectos más importantes del país.</p><br><br>
+        <h2>Valores corporativos</h2><br>
+        <p>Orientación hacia un trabajo de calidad, producto del compromiso y la disciplina de todo nuestro equipo de profesionales, generando proyectos innovadores bajo conceptos responsables con el fin de brindarles a nuestros clientes plena confianza de nuestros proyectos.</p><br><br>
+        <h2>Conceptos/Identidad</h2><br>
+        <ul style="padding-left: 3%;">
+          <li>Calidad</li>
+          <li>Compromiso</li>
+          <li>Disciplina</li>
+          <li>Innovación</li>
+          <li>Responsabilidad</li>
+          <li>Confianza</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <!-- Sección de Barbasco (como su nombre lo indica) -->
   <div class="barbasco"></div>
   <!-- Sección de nuestros apartamentos -->
