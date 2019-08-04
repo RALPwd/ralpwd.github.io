@@ -62,6 +62,7 @@
   .mainmenu{
     grid-area: menu;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -69,6 +70,24 @@
     padding-top: 10%;
     width: auto;
     height: 33%;
+  }
+
+  .menu{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    font-size: 3.5vmin;
+    padding-top: 10%;
+  }
+
+  .menu ul li{
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    color: white;
   }
 
   .intersection{
@@ -122,11 +141,20 @@
       </div>
       <div class="mainimages">
         <img src="dummies/barbasco.jpg" alt="">
-        <!-- <img src="dummies/edificiofull.jpg" alt=""> -->
       </div>
     </div>
     <div class="mainmenu">
       <img src="dummies/logo.jpg" alt="">
+      <div class="menu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">¿Quienes somos?</a></li>
+          <li><a href="#">Barbasco</a></li>
+          <li><a href="#">Nuestros apartamentos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Asociados</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="intersection">
