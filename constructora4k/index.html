@@ -183,9 +183,12 @@
     font-size: 3vmin;
   }
 
+
+  /* Sección apartamentos */
+
   .ourapartments{
-    background-color: ghostwhite;
-    height: 100vh;
+    background-color: darkolivegreen;
+    height: 150vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -247,20 +250,25 @@
     padding-top: 2%;
   }
 
-  [class^="apartments"]:hover > img{
+  [class^="apartments"] img{
     transition: transform .2s;
+    transform-origin: 50% 100%;
+  }
+
+  [class^="apartments"] img:hover{
     transform: scale(1.2);
   }
 
   [class^="aptdescription"]{
     position: absolute;
-    bottom: 0.5vw;
+    bottom: 4vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 2vmin;
     text-align: center;
-    background-color: aqua;
+    color: white;
+    background-color: olive;
     width: 30vw;
-    height: 40%;
+    height: 45%;
     border-bottom: 1px rgba(100, 100, 100, .5) solid;
     border-left: 1px rgba(100, 100, 100, .5) solid;
     border-right: 1px rgba(100, 100, 100, .5) solid;
@@ -272,8 +280,68 @@
     list-style-type: none;
   }
 
+  [class^="aptdescription"] h2 {
+    line-height: 7vmin;
+  }
+
   .aptdescription2 ul, .aptdescription3 ul{
     columns: 2;
+  }
+
+  /*Sección contacto*/
+
+  .contact{
+    display: grid;
+    width: 100vw;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  input{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-bottom: .5%;
+    border: 1px solid darkblue;
+  }
+
+  textarea{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: .5%;
+    border: 1px solid darkblue;
+  }
+
+  .contactform{
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contacttext{
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contacttext ul {
+    padding-left: 3%;
+    line-height: 5vh;
+  }
+
+  .contacttext ul li {
+    list-style-type: disc;
+  }
+
+  .googlemaps{
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 
   </style>
@@ -300,7 +368,7 @@
           <li><a href="#quienessomos">¿Quienes somos?</a></li>
           <li><a href="#barbasco">Barbasco</a></li>
           <li><a href="#nuestrosapartamentos">Nuestros apartamentos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#">Asociados</a></li>
         </ul>
       </div>
@@ -319,7 +387,7 @@
           <li><a href="#quienessomos">¿Quienes somos?</a></li>
           <li><a href="#barbasco">Barbasco</a></li>
           <li><a href="#nuestrosapartamentos">Nuestros apartamentos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#">Asociados</a></li>
         </ul>
       </div>
@@ -365,7 +433,7 @@
           <li><a href="#quienessomos">¿Quienes somos?</a></li>
           <li><a href="#barbasco">Barbasco</a></li>
           <li><a href="#nuestrosapartamentos">Nuestros apartamentos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#">Asociados</a></li>
         </ul>
       </div>
@@ -448,6 +516,33 @@
           <li>Baño para personas con movilidad reducida</li>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contacto">
+    <div class="contactform">
+      <h2>Contacto</h2><br>
+      <p>Comunicate con nosotros o visita nuestra sala de ventas y realiza el tour de realidad virtual por uno de nuestros apartamentos.</p><br>
+      <form action="post">
+        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+        <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono">
+        <input type="email" name="correo" id="correo" placeholder="Tu e-mail">
+        <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Tu mensaje"></textarea>
+        <input type="button" value="Enviar">
+      </form>
+    </div>
+    <div class="contacttext">
+      <h2>Siempre estamos dispuestos a solucionar sus inquietudes</h2><br>
+      <ul>
+        <li>Correo electrónico: <a href="mailto:constructora4ksas@gmail.com">constructora4ksas@gmail.com</a></li>
+        <li>Celular: 313 262 4098</li>
+        <li>Teléfono: (1)703 7158</li>
+        <li>Dirección sala de ventas: Cra 72 Bis #75A-80</li>
+        <li>Dirección de proyecto: Cra 72 Bis #75A-80</li>
+      </ul>
+    </div>
+    <div class="googlemaps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4480346685787!2d-74.09483948568636!3d4.691943443040951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b3c76345acf%3A0xbcf421996451decc!2sCra.+72+Bis+%2375a-80%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565025024850!5m2!1ses-419!2sco" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 </body>
