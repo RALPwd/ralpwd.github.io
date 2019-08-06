@@ -25,7 +25,7 @@
 }
 
 .icon-email:before {
-  background-color: #ffd300;
+  background-color: #B23121;
   content: "\e900";
   border-radius: 10px;
   padding: 5px;
@@ -34,6 +34,7 @@
 
 .icon-instagram:before {
   background-color: #3f729b;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   content: "\e903";
   border-radius: 10px;
   padding: 5px;
@@ -41,7 +42,7 @@
 }
 
 .icon-whatsapp:before {
-  background-color: #25d366;
+  background-color: #4FCE5D;
   content: "\e904";
   border-radius: 10px;
   padding: 5px;
@@ -49,7 +50,7 @@
 }
 
 .icon-facebook:before {
-  background-color: #1877f2;
+  background-color: #3B5998;
   content: "\e907";
   border-radius: 10px;
   padding: 5px;
