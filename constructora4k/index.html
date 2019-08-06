@@ -1,350 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+  <link rel="stylesheet" href="styles.css">
 
-  html{
-    scroll-behavior: smooth;
-  }
-
-  body{
-    overflow-x: hidden;
-  }
-
-  *{
-    padding: 0;
-    margin: 0;
-  }
-
-  /* sección de inicio */
-  .main{
-    background-image: url(./dummies/edificio.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-areas: "content menu";
-    grid-template-columns: 50% 50%;
-  }
-
-  .maincontent{
-    grid-area: content;
-    background-color: rgba(255, 255, 255, .9);
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-  }
-
-  .welcome{
-    width: 90%;
-    padding-top: 10%;
-  }
-
-  .welcome p{
-    font-size: 4.5vmin;
-  }
-
-  .mainimages{
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    bottom: 10%;
-    width: 40%;
-    height: 33%;
-  }
-
-  .mainimages img{
-    height: 100%;
-  }
-
-  .mainmenu{
-    grid-area: menu;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .25)
-  }
-
-  .mainmenu img{
-    padding-top: 10%;
-    width: auto;
-    height: 33vh;
-  }
-
-  .menu{
-    width: 100%;
-    height: 40%;
-    text-align: center;
-    font-size: 3.5vmin;
-    padding-top: 10%;
-    text-transform: uppercase;
-  }
-
-  .menu ul li{
-    list-style-type: none;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .menu ul li a{
-    text-decoration: none;
-    color: white;
-  }
-
-  .intersection{
-    background-image: url(./dummies/edificiofull.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 120vw;
-  }
-
-  /* sección de quienes somos */
-
-  .aboutus{
-    background-image: url(./dummies/reception.jpg);
-    height: 120vh;
-    width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-areas: "menu about";
-    grid-template-columns: 50% 50%;
-  }
-
-  .about{
-    grid-area: about;
-    background-color: rgba(255, 255, 255, .9);
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-  }
-
-  .abouttext{
-    width: 90%;
-    padding-top: 10%;
-  }
-
-  .abouttext p{
-    font-size: 3vmin;
-  }
-
-  .abouttext ul{
-    font-size: 3vmin;
-    padding-left: 3%;
-  }
-
-  .intersection2{
-    background-image: url(./dummies/teamwork.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  /* sección barbasco */
-
-  .barbasco{
-    background-image: url(./dummies/aptos2.jpg);
-    height: 110vh;
-    width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-areas: "barbascosection menu";
-    grid-template-columns: 50% 50%;
-  }
-
-  .barbascosection{
-    grid-area: barbascosection;
-    background-color: rgba(255, 255, 255, .9);
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-  }
-
-  .barbascotext{
-    width: 90%;
-    padding-top: 10%;
-  }
-
-  .barbascotext p{
-    font-size: 3vmin;
-  }
-
-
-  /* Sección apartamentos */
-
-  .ourapartments{
-    background-color: darkolivegreen;
-    height: 150vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-  .apartments1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding-top: 2%;
-  }
-
-  .apartments2{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding-top: 2%;
-  }
-
-  .apartments3{
-    grid-column-start: 5;
-    grid-column-end: 7;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding-top: 2%;
-  }
-
-  .apartments4{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding-top: 2%;
-  }
-
-  .apartments5{
-    grid-column-start: 4;
-    grid-column-end: 7;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding-top: 2%;
-  }
-
-  [class^="apartments"] img{
-    transition: transform .2s;
-    transform-origin: 50% 100%;
-  }
-
-  [class^="apartments"] img:hover{
-    transform: scale(1.2);
-  }
-
-  [class^="aptdescription"]{
-    position: absolute;
-    bottom: 4vh;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vmin;
-    text-align: center;
-    color: white;
-    background-color: olive;
-    width: 30vw;
-    height: 45%;
-    border-bottom: 1px rgba(100, 100, 100, .5) solid;
-    border-left: 1px rgba(100, 100, 100, .5) solid;
-    border-right: 1px rgba(100, 100, 100, .5) solid;
-    border-radius: 0 0 5% 5%;
-    box-shadow: 0px -3px 5px 0.5px rgba(0,0,0,0.5);
-  }
-
-  [class^="aptdescription"] ul li{
-    list-style-type: none;
-  }
-
-  [class^="aptdescription"] h2 {
-    line-height: 7vmin;
-  }
-
-  .aptdescription2 ul, .aptdescription3 ul{
-    columns: 2;
-  }
-
-  /*Sección contacto*/
-
-  .contact{
-    display: grid;
-    width: 100vw;
-    height: 120vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  input{
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    padding-top: .5%;
-    padding-bottom: .5%;
-    margin-bottom: .5%;
-    border: 1px solid darkblue;
-  }
-
-  textarea{
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: .5%;
-    border: 1px solid darkblue;
-  }
-
-  .contactform{
-    box-sizing: border-box;
-    padding: 5%;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .contacttext{
-    box-sizing: border-box;
-    padding: 5%;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .contacttext ul {
-    padding-left: 3%;
-    line-height: 5vh;
-  }
-
-  .contacttext ul li {
-    list-style-type: disc;
-  }
-
-  .googlemaps{
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  </style>
+  <title>Proyecto de vivienda nuevo en Engativá || Constructora 4K</title>
 </head>
 <body>
   <!-- Seccion de inicio -->
@@ -357,11 +19,11 @@
         </p>
       </div>
       <div class="mainimages">
-        <img src="dummies/barbasco.jpg" alt="">
+        <img src="img/barbasco.jpg" alt="">
       </div>
     </div>
     <div class="mainmenu">
-      <img src="dummies/logo.jpg" alt="">
+      <img src="img/logo.jpg" alt="">
       <div class="menu">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
@@ -369,18 +31,21 @@
           <li><a href="#barbasco">Barbasco</a></li>
           <li><a href="#nuestrosapartamentos">Nuestros apartamentos</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#">Asociados</a></li>
+          <li><a href="#asociados">Asociados</a></li>
         </ul>
       </div>
     </div>
   </div>
+  <a href="#inicio" class="backtotop">
+    <img src="img/chevron-up.svg" alt="">
+  </a>
   <div class="intersection">
   </div>
 
   <!-- Sección de quienes somos -->
   <div class="aboutus" id="quienessomos">
     <div class="mainmenu">
-      <img src="dummies/logo.jpg" alt="">
+      <img src="img/logo.jpg" alt="">
       <div class="menu">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
@@ -388,7 +53,7 @@
           <li><a href="#barbasco">Barbasco</a></li>
           <li><a href="#nuestrosapartamentos">Nuestros apartamentos</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#">Asociados</a></li>
+          <li><a href="#asociados">Asociados</a></li>
         </ul>
       </div>
     </div>
@@ -426,7 +91,7 @@
       </div>
     </div>
     <div class="mainmenu">
-      <img src="dummies/logo.jpg" alt="">
+      <img src="img/logo.jpg" alt="">
       <div class="menu">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
@@ -434,7 +99,7 @@
           <li><a href="#barbasco">Barbasco</a></li>
           <li><a href="#nuestrosapartamentos">Nuestros apartamentos</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#">Asociados</a></li>
+          <li><a href="#asociados">Asociados</a></li>
         </ul>
       </div>
     </div>
@@ -542,8 +207,20 @@
       </ul>
     </div>
     <div class="googlemaps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4480346685787!2d-74.09483948568636!3d4.691943443040951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b3c76345acf%3A0xbcf421996451decc!2sCra.+72+Bis+%2375a-80%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565025024850!5m2!1ses-419!2sco" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4480346685787!2d-74.09483948568636!3d4.691943443040951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b3c76345acf%3A0xbcf421996451decc!2sCra.+72+Bis+%2375a-80%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565025024850!5m2!1ses-419!2sco" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+  </div>
+  <div class="partnercontainer" id="asociados">
+    <div class="partner">
+      <h2>Partner</h2>
+      <a href="#">
+        <img src="img/logoidaco.png" alt="">
+        <p>IDACO SAS</p>
+      </a>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Creado por <a href="http://ralpwd.github.io">RALPwd</a> para MTagencia</span>
   </div>
 </body>
 </html>
