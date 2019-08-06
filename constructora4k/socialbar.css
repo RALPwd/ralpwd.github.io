@@ -42,7 +42,7 @@
 }
 
 .icon-whatsapp:before {
-  background-color: #4FCE5D;
+  background-color: #00e676;
   content: "\e904";
   border-radius: 10px;
   padding: 5px;
@@ -50,7 +50,7 @@
 }
 
 .icon-facebook:before {
-  background-color: #3B5998;
+  background-color: #4267b2;
   content: "\e907";
   border-radius: 10px;
   padding: 5px;
