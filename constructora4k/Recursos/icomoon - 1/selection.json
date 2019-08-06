@@ -1,0 +1,63 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M961.714 760.571l-94.857 94.286c-14.286 14.286-37.143 14.286-51.429 0l-303.429-303.429-303.429 303.429c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.286c-14.286-14.286-14.286-37.714 0-52l424-423.429c14.286-14.286 37.143-14.286 51.429 0l424 423.429c14.286 14.286 14.286 37.714 0 52z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-up"
+        ],
+        "grid": 14
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 17,
+        "id": 0,
+        "name": "chevron-up",
+        "prevSize": 28
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showCodes": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "name": "icomoon",
+      "classSelector": ".icon"
+    },
+    "historySize": 50
+  }
+}
