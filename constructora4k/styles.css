@@ -352,6 +352,8 @@ textarea{
   grid-template-columns: 50% 50%;
 }
 
+/* Sección asociados */
+
 .partner{
   background-color: rgba(255, 255, 255, .9);
   display: flex;
@@ -375,6 +377,9 @@ textarea{
 .partner a img{
   width: 17vw;
 }
+
+
+/* footer */
 
 .backtotop{
   position: fixed;
@@ -411,4 +416,338 @@ textarea{
 .footer a{
   text-decoration: none;
   color: darkgray;
+}
+
+@media screen and (max-width: 600px){
+  /* sección de inicio */
+  .main{
+    min-height: 100vh;
+    height: 630px;
+    background-attachment: scroll;
+    grid-template-areas: "content";
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+  }
+
+  .welcome{
+    padding-top: 50px;
+  }
+
+  .welcome p{
+    font-size: 5.6vmin;
+  }
+
+  .mainimages{
+    bottom: initial;
+    top: calc(280px + 10%);
+    height: calc(220px + 10%);
+  }
+
+  .mainimages img{
+    height: 100%;
+  }
+
+  .mainmenu{
+    display: none;
+  }
+
+  /* sección de quienes somos */
+
+  .aboutus{
+    height: 600px;
+    background-attachment: scroll;
+    display: grid;
+    grid-template-areas: "about";
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+
+  .abouttext p{
+    font-size: 12px;
+  }
+
+  .abouttext ul{
+    font-size: 12px;
+  }
+
+  .intersection2{
+    height: 480px;
+  }
+
+  /* sección barbasco */
+
+  .barbasco{
+    background-image: url(./img/aptos2.jpg);
+    height: 110vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "barbascosection menu";
+    grid-template-columns: 50% 50%;
+  }
+
+  .barbascosection{
+    grid-area: barbascosection;
+    background-color: rgba(255, 255, 255, .9);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  .barbascotext{
+    width: 90%;
+    padding-top: 10%;
+    text-align: justify;
+  }
+
+  .barbascotext p{
+    font-size: 3vmin;
+  }
+
+
+  /* Sección apartamentos */
+
+  .ourapartments{
+    background-color: darkolivegreen;
+    height: 150vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: none;
+  }
+
+  .apartments1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 2%;
+  }
+
+  .apartments2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 2%;
+  }
+
+  .apartments3{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 2%;
+  }
+
+  .apartments4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 2%;
+  }
+
+  .apartments5{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 2%;
+  }
+
+  [class^="apartments"] img{
+    transition: transform .2s;
+    transform-origin: 50% 100%;
+  }
+
+  [class^="apartments"] img:hover{
+    transform: scale(1.2);
+  }
+
+  [class^="aptdescription"]{
+    position: absolute;
+    bottom: 4vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vmin;
+    text-align: center;
+    color: white;
+    background-color: olive;
+    width: 30vw;
+    height: 45%;
+    border-bottom: 1px rgba(100, 100, 100, .5) solid;
+    border-left: 1px rgba(100, 100, 100, .5) solid;
+    border-right: 1px rgba(100, 100, 100, .5) solid;
+    border-radius: 0 0 5% 5%;
+    box-shadow: 0px -3px 5px 0.5px rgba(0,0,0,0.5);
+  }
+
+  [class^="aptdescription"] ul li{
+    list-style-type: none;
+  }
+
+  [class^="aptdescription"] h2 {
+    line-height: 7vmin;
+  }
+
+  .aptdescription2 ul, .aptdescription3 ul{
+    columns: 2;
+  }
+
+  /*Sección contacto*/
+
+  .contact{
+    display: grid;
+    width: 100vw;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: none;
+  }
+
+  input{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-bottom: .5%;
+    border: 1px solid darkblue;
+  }
+
+  textarea{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: .5%;
+    border: 1px solid darkblue;
+    resize: none;
+  }
+
+  .contactform{
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contacttext{
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contacttext ul {
+    padding-left: 3%;
+    line-height: 5vh;
+  }
+
+  .contacttext ul li {
+    list-style-type: disc;
+  }
+
+  .googlemaps{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .partnercontainer{
+    background-image: url(./img/partner.jpg);
+    height: 50vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  /* Sección asociados */
+
+  .partner{
+    background-color: rgba(255, 255, 255, .9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+  }
+
+  .partner h2{
+    width: 100%;
+    text-align: center;
+  }
+
+  .partner a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+
+  .partner a img{
+    width: 17vw;
+  }
+
+
+  /* footer */
+
+  .backtotop{
+    position: fixed;
+    z-index: 1;
+    bottom: 1%;
+    right: 1%;
+    transition-property: visibility, opacity;
+    transition-duration: .2s;
+    background-color: aqua;
+    padding: 0.2%;
+    border-radius: 25%;
+  }
+
+  .main:hover ~ .backtotop{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .footer{
+    background-color: black;
+    color: darkgrey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vmin;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+  }
+
+  .footer span{
+    margin-right: 5%;
+  }
+
+  .footer a{
+    text-decoration: none;
+    color: darkgray;
+  }
 }

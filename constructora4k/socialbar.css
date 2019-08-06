@@ -26,34 +26,33 @@
 
 .icon-email:before {
   background-color: #B23121;
-  content: "\e900";
+  content: "\e901";
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   
 }
 
 .icon-instagram:before {
-  background-color: #3f729b;
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   content: "\e903";
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   
 }
 
 .icon-whatsapp:before {
-  background-color: #00e676;
-  content: "\e904";
+  background-color: #25d366;
+  content: "\e902";
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   
 }
 
 .icon-facebook:before {
-  background-color: #4267b2;
-  content: "\e907";
+  background-color: #3b5999;
+  content: "\e900";
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   
 }
 
@@ -69,13 +68,22 @@
 }
 
 .social-icon{
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   text-align: center;
 }
 
+.social-link{
+  transition: .5s;
+  transform-origin: 0% 50%;
+}
+
+.social-link:hover{
+  transform: scale(1.2);
+}
+
 a {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   text-decoration: none;
 }
 
