@@ -29,7 +29,6 @@
   content: "\e901";
   border-radius: 10px;
   padding: 10px;
-  
 }
 
 .icon-instagram:before {
@@ -37,7 +36,6 @@
   content: "\e903";
   border-radius: 10px;
   padding: 10px;
-  
 }
 
 .icon-whatsapp:before {
@@ -45,7 +43,6 @@
   content: "\e902";
   border-radius: 10px;
   padding: 10px;
-  
 }
 
 .icon-facebook:before {
@@ -53,7 +50,6 @@
   content: "\e900";
   border-radius: 10px;
   padding: 10px;
-  
 }
 
 .social-bar{
@@ -87,8 +83,12 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .social-bar{
-    left: -30px;
+    bottom: 0;
+  }
+
+  .social-link:hover{
+    transform: none;
   }
 }
