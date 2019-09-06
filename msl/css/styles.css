@@ -15,7 +15,7 @@ header{
   font-family: Tahoma, Roboto, sans-serif;
   font-weight: 100;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,8 +85,9 @@ header img{
   margin: 1%;
   padding: 8%;
   text-align: justify;
-  background-color: #42a5d1;
+  /* background-color: #42a5d1; */
 }
+
 
 .whatstext h2{
   text-align: center;
@@ -96,7 +97,7 @@ header img{
 }
 
 .whatstext p{
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .buttoncontainer{
@@ -107,16 +108,18 @@ header img{
 }
 
 .buttoncontainer form button{
-  background-color: white;
+  background-color: #3d7dc0;
   border: none;
   font-family: Tahoma, Roboto, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 3% 20%;
   cursor: pointer;
+  color: white;
+  border-radius: 5px 5px 5px 5px/5px 5px 5px 5px;
 }
 
 .buttoncontainer form button:active{
-  background-color: #3d7dc0;
+  background-color: #7dcdf1;
 }
 
 .whatismsl img{
@@ -131,21 +134,21 @@ header img{
 }
 
 .spacefiller{
-  background-image: url(../img/businessman-3210932_1920.jpg);
+  background-image: url(../img/industry-4-2741774_1920.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 60vh;
+  height: 75vh;
 }
 
 footer{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 220px 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 115px 15px;
   width: 100vw;
-  height: 250px;
+  height: 130px;
   background-color: black;
 }
 
@@ -156,17 +159,17 @@ footer{
 }
 
 footer img{
-  width: 40%;
+  width: 16%;
 }
 
 .socials{
   font-family: Tahoma, Roboto, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 0.6em;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1% 5%;
+  padding: 7% 0% 7% 4%;
 }
 
 .socials span{
@@ -180,19 +183,27 @@ footer img{
   text-decoration: none;
   color: white;
   padding-left: 1em;
+  margin-bottom: 0;
 }
 
 .socials i{
   font-size: 1em;
 }
 
+.quality{
+  font-family: Tahoma, Roboto, sans-serif;
+  color: white;
+  font-size: 0.8em;
+}
+
 .credits{
   font-family: Tahoma, Roboto, sans-serif;
-  color: rgba(100, 100, 100, 1);
-  grid-column: 1 / span 2;
+  color: rgba(255, 255, 255, 0.6);
+  grid-column: 1 / span 3;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: .6em
 }
 
 .credits a{
@@ -217,143 +228,53 @@ footer img{
 }
 
 .sectioncontainer{
-  background: url(../img/businessman-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 0.9em;
 }
 
 .whychoose{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30vh 1fr;
+  grid-template-rows: 40vh 1fr;
   font-family: Tahoma, Roboto, sans-serif;
 }
 
 .whychoose div{
-  background-color: rgba(66, 165, 209, .8);
   margin: 1%;
   border-radius: 30px 30px 30px 30px / 25px 25px 25px 25px;
   padding: 3vh;
   transition: .5s;
 }
 
+.whychoose div ul{
+  list-style-type: none;
+}
+
+.whychoose div ul li::before{
+  content: "\2023";  
+  color: #3d7dc0; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  font-size: 1.1em;
+  margin-left: -1em; 
+}
+
 .whychoose div:hover{
-  background-color: rgba(66, 165, 209, 1);
+  background-color: rgba(66, 165, 209, 0.3);
 }
 
 .humanresources{
   background-color: white;
-  grid-column: 1 / span 2;
-  grid-row-start: 2;
 }
 
-.treecontainer{
-  width: 90%;
-  height: 100%;
-  margin: 0 auto !important;
-  padding: 1% !important;
-  background-color: transparent !important;
+.imagefiller{
+  background: url("../img/humanresources.jpg");
+  background-position-y: -60px;
+  background-size: 580px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-  /*Now the CSS*/
-.tree ul {
-	padding-top: 20px; position: relative;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  display: flex;
-  justify-content: center;
-}
-
-.tree li {
-	float: left; text-align: center;
-	list-style-type: none;
-	position: relative;
-	padding: 20px 5px 0 5px;
-	
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-}
-
-/*We will use ::before and ::after to draw the connectors*/
-
-.tree li::before, .tree li::after{
-	content: '';
-	position: absolute; top: 0; right: 50%;
-	border-top: 1px solid #ccc;
-	width: 50%; height: 20px;
-}
-.tree li::after{
-	right: auto; left: 50%;
-	border-left: 1px solid #ccc;
-}
-
-/*We need to remove left-right connectors from elements without 
-any siblings*/
-.tree li:only-child::after, .tree li:only-child::before {
-	display: none;
-}
-
-/*Remove space from the top of single children*/
-.tree li:only-child{ padding-top: 0;}
-
-/*Remove left connector from first child and 
-right connector from last child*/
-.tree li:first-child::before, .tree li:last-child::after{
-	border: 0 none;
-}
-/*Adding back the vertical connector to the last nodes*/
-.tree li:last-child::before{
-	border-right: 1px solid #ccc;
-	border-radius: 0 5px 0 0;
-	-webkit-border-radius: 0 5px 0 0;
-	-moz-border-radius: 0 5px 0 0;
-}
-.tree li:first-child::after{
-	border-radius: 5px 0 0 0;
-	-webkit-border-radius: 5px 0 0 0;
-	-moz-border-radius: 5px 0 0 0;
-}
-
-/*Time to add downward connectors from parents*/
-.tree ul ul::before{
-	content: '';
-	position: absolute; top: 0; left: 50%;
-	border-left: 1px solid #ccc;
-	width: 0; height: 20px;
-}
-
-.tree li a{
-  background-color: white;
-	border: 1px solid #ccc;
-	padding: 5px 10px;
-	text-decoration: none;
-	color: #000;
-	font-family: Tahoma, Roboto, sans-serif;
-	font-size: 0.8em;
-	display: inline-block;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-}
-
-/*Time for some hover effects*/
-/*We will apply the hover effect the the lineage of the element also*/
-.tree li a:hover, .tree li a:hover+ul li a {
-	background: #7dcdf1; border: 1px solid #fff;
-}
-/*Connector styles on hover*/
-.tree li a:hover+ul li::after, 
-.tree li a:hover+ul li::before, 
-.tree li a:hover+ul::before, 
-.tree li a:hover+ul ul::before{
-	border-color:  #fff;
-}
 
 .misionandvision{
   display: grid;
@@ -448,4 +369,43 @@ right connector from last child*/
 }
 .toggle:checked + .title:before {
   transform: rotate(90deg) !important;
+}
+
+.contact{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-family: Tahoma, Roboto, sans-serif;
+}
+
+.services div{
+  margin: 1%;
+  border-radius: 30px 30px 30px 30px / 25px 25px 25px 25px;
+  padding: 3vh;
+  transition: .5s;
+}
+
+.services div ul{
+  list-style-type: none;
+}
+
+.services div ul li::before{
+  content: "\2023";  
+  color: #3d7dc0; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  font-size: 1.1em;
+  margin-left: -1em; 
+}
+
+.services div:hover{
+  background-color: rgba(66, 165, 209, 0.3);
 }

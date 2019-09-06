@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylecons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <title>MSL</title>
+</head>
+<body>
+  <header id="header">
+    <img id="logo" src="img/logo_negativo.png" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobrenosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nuestrosclientes.html">Clientes</a></li>
+      <li><a href="contactanos.html">Contáctanos</a></li>
+    </ul>
+  </header>
+  <section class="aboutuswelcome">
+    <h2>Nuestros clientes</h2>
+  </section>
+  
+  <footer>
+    <div class="socials">
+      <span>
+        <i class="icon-phone"></i><span><a href="tel:+5717429730">(1) 742 9730</a></span>
+      </span>
+      <span>
+          <i class="material-icons">room</i><span><a href="https://www.waze.com/ul?ll=4.68898769%2C-74.03692961&navigate=yes&zoom=16">Cra. 7D N° 108 A – 59</a></span>
+      </span>
+    </div>
+    <div class="logocontainer">
+      <img src="img/logo_negativo.png" alt="">
+    </div>
+    <div class="quality">
+    </div>
+    <div class="credits">
+      <p>Sitio Web diseñado por MT Agencia</p> 
+    </div>
+  </footer>
+  <div class="social-bar">
+    <a href="#">
+      <i class="icon-linkedin social-icon"></i>
+    </a>
+    <a href="#">
+      <i class="icon-email social-icon"></i>
+    </a>
+    <a href="#">
+      <i class="icon-whatsapp social-icon"></i>
+    </a>
+    <a href="#">
+      <i class="icon-cell-phone social-icon"></i>
+    </a>
+  </div>
+</body>
+<script>
+window.onscroll = function() {scrollchecker()};
+
+var header = document.getElementById('header');
+var logo = document.getElementById('logo');
+
+function scrollchecker() {
+  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    header.style.backgroundColor = 'rgba(61, 125, 192, 1)'
+    header.style.height = '60px';
+    header.style.fontSize = '1em';
+    logo.style.width = "8%"
+  } else{
+    header.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
+    header.style.height = '100px';
+    header.style.fontSize = '1.1em';
+    logo.style.width = "10%"
+  }
+}
+</script>
+</html>
