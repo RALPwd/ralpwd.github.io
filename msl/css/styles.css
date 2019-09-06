@@ -1,197 +1,451 @@
 
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-  *{
-    margin: 0;
-  }
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+*{
+  margin: 0; padding: 0;
+}
 
-  html{
-    overflow-x: hidden;
-  }
+html{
+  overflow-x: hidden;
+}
 
-  header{
-    background-color: rgba(61, 125, 192, 0.5);
-    width: 100vw;
-    height: 100px;
-    font-family: Tahoma, Roboto, sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    transition: 0.2s;
-  }
+header{
+  background-color: rgba(61, 125, 192, 0.5);
+  width: 100vw;
+  height: 100px;
+  font-family: Tahoma, Roboto, sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 0.2s;
+  box-sizing: content-box;
+}
 
-  header ul{
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-    list-style-type: none;
-  }
+header ul{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  list-style-type: none;
+}
 
-  header ul li a{
-    text-decoration: none;
-    color: white;
-  }
+header ul li a{
+  text-decoration: none;
+  color: white;
+}
 
-  header img{
-    width: 10%;
-    padding: 0% 3%;
-    transition: 0.2s;
-  }
+header img{
+  width: 10%;
+  padding: 0% 10% 0% 0%;
+  transition: 0.2s;
+}
 
-  .welcome{
-    height: 100vh;
-    width: 100vw;
-    background: url('../img/businessman-3213659_1280.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Tahoma, Roboto, sans-serif;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.welcome{
+  height: 100vh;
+  width: 100vw;
+  background: url('../img/businessman-3213659_1280.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Tahoma, Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .welcome img{
-    width: 20%;
-  }
+.welcome img, .aboutuswelcome img{
+  width: 15%;
+}
 
-  .welcome h2{
-    font-size: 4em;
-  }
+.welcome h2, .aboutuswelcome h2{
+  font-size: 3em;
+  font-weight: 100;
+}
 
-  .whatismsl{
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: Tahoma, Roboto, sans-serif;
-    background-color: white;
-  }
+.whatismsl{
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Tahoma, Roboto, sans-serif;
+  background-color: white;
+}
 
-  .whatstext{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 1%;
-    padding: 8%;
-    text-align: justify;
-    background-color: #42a5d1;
-  }
+.whatstext{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  padding: 8%;
+  text-align: justify;
+  background-color: #42a5d1;
+}
 
-  .whatstext h2{
-    text-align: center;
-    padding-bottom: 3%;
-    font-size: 2.2em;
-  }
+.whatstext h2{
+  text-align: center;
+  padding-bottom: 3%;
+  font-size: 2.2em;
+  font-weight: 100;
+}
 
-  .whatstext p{
-    font-size: 1.1em;
-  }
+.whatstext p{
+  font-size: 1.1em;
+}
 
-  .buttoncontainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 3%;
-  }
+.buttoncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+}
 
-  .buttoncontainer form button{
-    background-color: white;
-    border: none;
-    font-family: Tahoma, Roboto, sans-serif;
-    font-size: 1.5em;
-    padding: 3% 20%;
-    cursor: pointer;
-  }
+.buttoncontainer form button{
+  background-color: white;
+  border: none;
+  font-family: Tahoma, Roboto, sans-serif;
+  font-size: 1.5em;
+  padding: 3% 20%;
+  cursor: pointer;
+}
 
-  .buttoncontainer form button:active{
-    background-color: #3d7dc0;
-  }
+.buttoncontainer form button:active{
+  background-color: #3d7dc0;
+}
 
-  .whatismsl img{
-    width: 80px;
-  }
+.whatismsl img{
+  width: 80px;
+}
 
-  .videoembed{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8%;
-  }
+.videoembed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8%;
+}
 
-  .spacefiller{
-    background-image: url(../img/laptop-3174729_1920.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 50vh;
-  }
+.spacefiller{
+  background-image: url(../img/businessman-3210932_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+}
 
-  footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 310px 40px;
-    width: 100vw;
-    height: 350px;
-    background-color: black;
-  }
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 220px 30px;
+  width: 100vw;
+  height: 250px;
+  background-color: black;
+}
 
-  .logocontainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.logocontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  footer img{
-    width: 60%;
-  }
+footer img{
+  width: 40%;
+}
 
-  .socials{
-    font-family: Tahoma, Roboto, sans-serif;
-    color: white;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 8% 5%;
-  }
+.socials{
+  font-family: Tahoma, Roboto, sans-serif;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1% 5%;
+}
 
-  .socials span{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-  }
+.socials span{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
 
-  .socials a{
-    text-decoration: none;
-    color: white;
-    padding-left: 1em;
-  }
+.socials a{
+  text-decoration: none;
+  color: white;
+  padding-left: 1em;
+}
 
-  .socials i{
-    font-size: 1em;
-  }
+.socials i{
+  font-size: 1em;
+}
 
-  .credits{
-    font-family: Tahoma, Roboto, sans-serif;
-    color: rgba(100, 100, 100, 1);
-    grid-column: 1 / span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.credits{
+  font-family: Tahoma, Roboto, sans-serif;
+  color: rgba(100, 100, 100, 1);
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .credits a{
-    text-decoration: none;
-    color: rgba(100, 100, 100, 1);
-  }
+.credits a{
+  text-decoration: none;
+  color: rgba(100, 100, 100, 1);
+}
+
+.aboutuswelcome{
+  height: 80vh;
+  width: 100vw;
+  background: url('../img/businessman-3213659_1280.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Tahoma, Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.sectioncontainer{
+  background: url(../img/businessman-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whychoose{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30vh 1fr;
+  font-family: Tahoma, Roboto, sans-serif;
+}
+
+.whychoose div{
+  background-color: rgba(66, 165, 209, .8);
+  margin: 1%;
+  border-radius: 30px 30px 30px 30px / 25px 25px 25px 25px;
+  padding: 3vh;
+  transition: .5s;
+}
+
+.whychoose div:hover{
+  background-color: rgba(66, 165, 209, 1);
+}
+
+.humanresources{
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row-start: 2;
+}
+
+.treecontainer{
+  width: 90%;
+  height: 100%;
+  margin: 0 auto !important;
+  padding: 1% !important;
+  background-color: transparent !important;
+}
+
+  /*Now the CSS*/
+.tree ul {
+	padding-top: 20px; position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+  background-color: white;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000;
+	font-family: Tahoma, Roboto, sans-serif;
+	font-size: 0.8em;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #7dcdf1; border: 1px solid #fff;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #fff;
+}
+
+.misionandvision{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: Tahoma, Roboto, sans-serif;
+}
+
+.misionandvision div{
+  background-color: rgba(66, 165, 209, .8);
+  margin: 1%;
+  border-radius: 30px 30px 30px 30px / 25px 25px 25px 25px;
+  padding: 6vh;
+  transition: .5s;
+}
+
+.misionandvision div:hover{
+  background-color: rgba(66, 165, 209, 1);
+}
+
+.services{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/*#################################################################################################
+########################################Accordion styles###########################################
+#################################################################################################*/
+
+.container {
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: Tahoma, Roboto, sans-serif;
+}
+.container h1 {
+  text-align: center;
+  margin: 1.5em 0 0;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+.accordion {
+  margin: 3em auto;
+  max-width: 70%;
+}
+.toggle {
+  display: none;
+}
+.option {
+  position: relative;
+  margin-bottom: 1em;
+}
+.title, .content {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: 0.5s;
+}
+.title {
+  background: #7dcdf1;
+  padding: 1em;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+.title:after, .title:before {
+  content: '';
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 2px;
+  height: 0.75em;
+  transition: 0.5s;
+}
+.title:after {
+  transform: rotate(90deg);
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.content p {
+  margin: 0;
+  padding: 0.5em 1em 1em;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.toggle:checked + .title, .toggle:checked + .title + .content {
+  box-shadow: 3px 3px 6px #42a5d1, -3px 3px 6px #fff;
+}
+.toggle:checked + .title + .content {
+  max-height: 500px;
+}
+.toggle:checked + .title:before {
+  transform: rotate(90deg) !important;
+}
