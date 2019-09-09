@@ -23,12 +23,12 @@
       <li><a href="contactanos.html">Contáctanos</a></li>
     </ul>
   </header>
-  <section class="aboutuswelcome">
+  <section class="subsectionwelcome">
     <h2>Nuestros servicios</h2>
   </section>
   <div class="sectioncontainer">
     <section class="services">
-      <div class="humanresources">
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">security</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">Seguridad</h3> <br> <br>
         <!-- <p style="padding: 0px 25px;" >67 empleados:</p> -->
@@ -41,7 +41,7 @@
           <li>Gestión de APIs</li>
         </ul>
       </div>
-      <div class="humanresources">
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">headset_mic</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">Gestión del Servicio</h3> <br> <br>
         <!-- <p style="padding: 0px 25px;" >67 empleados:</p> -->
@@ -52,7 +52,7 @@
           <li>Virtualización de servicios</li>
         </ul>
       </div>
-      <div class="humanresources">
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">visibility</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">Monitoreo IT</h3> <br> <br>
         <!-- <p style="padding: 0px 25px;" >67 empleados:</p> -->
@@ -63,7 +63,7 @@
           <li>APIs</li>
         </ul>
       </div>
-      <div class="humanresources">
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">work</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">Gestión Proyectos y Portafolios</h3> <br> <br>
         <!-- <p style="padding: 0px 25px;" >67 empleados:</p> -->
@@ -88,6 +88,20 @@
         </div>
       </div>
     </div>
+    <section class="services onerow">
+      <div class="hovercard double">
+        <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">assignment</i>
+        <h3 style="color: #3d7dc0; padding: 0px 25px;">Nuestro proceso metodológico</h3> <br> <br>
+        <!-- <p style="padding: 0px 25px;" >67 empleados:</p> -->
+        <ul style="padding: 0% 42px">
+          <li>1. Marketing y generación de demanda.</li>
+          <li>2. Prospección.</li>
+          <li>3. Preventa y venta.</li>
+          <li>4. Implementación.</li>
+          <li>5. Apoyo.</li>
+        </ul>
+      </div>
+    </section>
   </div>
   <footer>
       <div class="socials">
@@ -157,8 +171,9 @@ function scrollchecker() {
       // autoplayTimeout: 1000,
       // autoplayDirection: 'backward',
       // autoplayText: ['Iniciar', 'Detener'],
-      autoplayHoverPause: true,
+      // autoplayHoverPause: true,
       autoplayButton: false,
+      autoplayButtonOutput: false,
       // loop: false,
       // rewind: true,
       // mouseDrag: true,

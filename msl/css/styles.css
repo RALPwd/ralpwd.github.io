@@ -60,11 +60,11 @@ header img{
   align-items: center;
 }
 
-.welcome img, .aboutuswelcome img{
+.welcome img, .subsectionwelcome img{
   width: 15%;
 }
 
-.welcome h2, .aboutuswelcome h2{
+.welcome h2, .subsectionwelcome h2{
   font-size: 3em;
   font-weight: 100;
 }
@@ -211,7 +211,7 @@ footer img{
   color: rgba(100, 100, 100, 1);
 }
 
-.aboutuswelcome{
+.subsectionwelcome{
   height: 80vh;
   width: 100vw;
   background: url('../img/businessman-3213659_1280.jpg');
@@ -263,8 +263,13 @@ footer img{
   background-color: rgba(66, 165, 209, 0.3);
 }
 
-.humanresources{
+.hovercard{
   background-color: white;
+}
+
+.double{
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .imagefiller{
@@ -296,7 +301,6 @@ footer img{
 
 .services{
   width: 100vw;
-  min-height: 100vh;
 }
 
 /*#################################################################################################
@@ -371,13 +375,6 @@ footer img{
   transform: rotate(90deg) !important;
 }
 
-.contact{
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .services{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -408,4 +405,26 @@ footer img{
 
 .services div:hover{
   background-color: rgba(66, 165, 209, 0.3);
+}
+
+.onerow{
+  grid-template-rows: 50vh;
+}
+
+.form{
+  font-family: Tahoma, Roboto, sans-serif;
+}
+
+.form form > * {
+  width: 90%;
+  padding-bottom: 10px;
+  font-family: Tahoma, Roboto, sans-serif;
+  box-sizing: border-box;
+  border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+  border: 1px #6666 solid;
+  margin: 0 25px;
+}
+
+button{
+  padding: 5px !important;
 }
