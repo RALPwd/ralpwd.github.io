@@ -12,7 +12,7 @@
   <title>MSL</title>
 </head>
 <body>
-  <header id="header">
+  <header id="header" class="desktop">
     <img id="logo" src="img/logo_negativo.png" alt="">
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -22,17 +22,29 @@
       <li><a href="contactanos.html">Contáctanos</a></li>
     </ul>
   </header>
-  <section class="subsectionwelcome">
+  <header id="headermobile" class="mobile">
+    <img id="logo" src="img/logo_negativo.png" alt="">
+    <i class="material-icons menu-icon">menu</i>
+    <input type="checkbox" name="" id="">
+    <div class="menumobile">
+      <a href="index.html">Inicio</a>
+      <a href="sobrenosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nuestrosclientes.html">Clientes</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </div>
+  </header>
+  <section class="subsectionwelcome aboutuswelcome">
     <h2>¿Quiénes somos?</h2>
   </section>
   <div class="sectioncontainer">
-    <section class="whychoose">
-      <div>
+    <section class="services">
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">business_center</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">¿Quiénes somos?</h3><br><br>
         <p style="padding: 0px 25px; text-align: justify">MSL es una organización que proporciona soluciones de software y servicios asociados en seguridad, gestión de servicio, gestión de proyectos y portafolio, y áreas de monitoreo IT.</p>
       </div>
-      <div>
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">account_balance</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">Nuestros pilares</h3><br><br>
         <ul style="padding: 0% 42px">
@@ -96,18 +108,25 @@
 window.onscroll = function() {scrollchecker()};
 
 var header = document.getElementById('header');
+var headermobile = document.getElementById('headermobile');
 var logo = document.getElementById('logo');
 
 function scrollchecker() {
   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
     header.style.backgroundColor = 'rgba(61, 125, 192, 1)'
+    headermobile.style.backgroundColor = 'rgba(61, 125, 192, 1)'
     header.style.height = '60px';
+    headermobile.style.height = '60px';
     header.style.fontSize = '1em';
+    headermobile.style.fontSize = '1em';
     logo.style.width = "8%"
   } else{
     header.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
+    headermobile.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
     header.style.height = '100px';
+    headermobile.style.height = '100px';
     header.style.fontSize = '1.1em';
+    headermobile.style.fontSize = '1.1em';
     logo.style.width = "10%"
   }
 }

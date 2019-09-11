@@ -13,7 +13,7 @@
   <title>MSL</title>
 </head>
 <body>
-  <header id="header">
+  <header id="header" class="desktop">
     <img id="logo" src="img/logo_negativo.png" alt="">
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -23,7 +23,19 @@
       <li><a href="contactanos.html">Contáctanos</a></li>
     </ul>
   </header>
-  <section class="subsectionwelcome">
+  <header id="headermobile" class="mobile">
+    <img id="logo" src="img/logo_negativo.png" alt="">
+    <i class="material-icons menu-icon">menu</i>
+    <input type="checkbox" name="" id="">
+    <div class="menumobile">
+      <a href="index.html">Inicio</a>
+      <a href="sobrenosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nuestrosclientes.html">Clientes</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </div>
+  </header>
+  <section class="subsectionwelcome serviceswelcome">
     <h2>Nuestros servicios</h2>
   </section>
   <div class="sectioncontainer">
@@ -89,7 +101,7 @@
       </div>
     </div>
     <section class="services onerow">
-      <div class="hovercard double">
+      <div class="hovercard">
         <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">assignment</i>
         <h3 style="color: #3d7dc0; padding: 0px 25px;">Nuestro proceso metodológico</h3> <br> <br>
         <!-- <p style="padding: 0px 25px;" >67 empleados:</p> -->
@@ -100,6 +112,16 @@
           <li>4. Implementación.</li>
           <li>5. Apoyo.</li>
         </ul>
+      </div>
+      <div class="hovercard">
+        <i class="material-icons" style="color: #3d7dc0; padding: 0px 25px; font-size: 100px">done_all</i>
+        <h3 style="color: #3d7dc0; padding: 0px 25px;">Política de calidad</h3> <br> <br>
+        <p style="padding: 0px 25px;">M.S.L. Distribuciones y Cía. S.A.S. para lograr satisfacer los requisitos y necesidades de sus clientes y otras partes interesadas, en la prestación de servicios de soluciones integrales en informática, en áreas de gestión, seguridad e infraestructura, se basa en las siguientes premisas:</p> <br>
+        <ul style="padding: 0% 42px">
+          <li>Compromiso y participación activa del personal competente.</li>
+          <li>Relaciones mutuamente beneficiosas con los proveedores</li>
+        </ul> <br>
+        <p style="padding: 0px 25px;">Todos los esfuerzos de la organización están dirigidos hacia el mejoramiento continuo de sus procesos</p>
       </div>
     </section>
   </div>
@@ -140,18 +162,25 @@
 window.onscroll = function() {scrollchecker()};
 
 var header = document.getElementById('header');
+var headermobile = document.getElementById('headermobile');
 var logo = document.getElementById('logo');
 
 function scrollchecker() {
   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
     header.style.backgroundColor = 'rgba(61, 125, 192, 1)'
+    headermobile.style.backgroundColor = 'rgba(61, 125, 192, 1)'
     header.style.height = '60px';
+    headermobile.style.height = '60px';
     header.style.fontSize = '1em';
+    headermobile.style.fontSize = '1em';
     logo.style.width = "8%"
   } else{
     header.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
+    headermobile.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
     header.style.height = '100px';
+    headermobile.style.height = '100px';
     header.style.fontSize = '1.1em';
+    headermobile.style.fontSize = '1.1em';
     logo.style.width = "10%"
   }
 }

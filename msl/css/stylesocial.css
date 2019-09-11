@@ -96,9 +96,3 @@ a {
   margin-bottom: 13px;
   text-decoration: none;
 }
-
-@media screen and (max-width: 767px) {
-  .social-bar{
-    left: -30px;
-  }
-}

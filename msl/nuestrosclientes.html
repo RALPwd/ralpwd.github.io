@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/stylecons.css">
+  <link rel="stylesheet" href="css/stylesocial.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   <title>MSL</title>
 </head>
 <body>
-  <header id="header">
+  <header id="header" class="desktop">
     <img id="logo" src="img/logo_negativo.png" alt="">
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -21,7 +22,19 @@
       <li><a href="contactanos.html">Contáctanos</a></li>
     </ul>
   </header>
-  <section class="subsectionwelcome">
+  <header id="headermobile" class="mobile">
+    <img id="logo" src="img/logo_negativo.png" alt="">
+    <i class="material-icons menu-icon">menu</i>
+    <input type="checkbox" name="" id="">
+    <div class="menumobile">
+      <a href="index.html">Inicio</a>
+      <a href="sobrenosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nuestrosclientes.html">Clientes</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </div>
+  </header>
+  <section class="subsectionwelcome clientswelcome">
     <h2>Nuestros clientes</h2>
   </section>
   <footer>
@@ -61,18 +74,25 @@
 window.onscroll = function() {scrollchecker()};
 
 var header = document.getElementById('header');
+var headermobile = document.getElementById('headermobile');
 var logo = document.getElementById('logo');
 
 function scrollchecker() {
   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
     header.style.backgroundColor = 'rgba(61, 125, 192, 1)'
+    headermobile.style.backgroundColor = 'rgba(61, 125, 192, 1)'
     header.style.height = '60px';
+    headermobile.style.height = '60px';
     header.style.fontSize = '1em';
+    headermobile.style.fontSize = '1em';
     logo.style.width = "8%"
   } else{
     header.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
+    headermobile.style.backgroundColor = 'rgba(61, 125, 192, 0.5)'
     header.style.height = '100px';
+    headermobile.style.height = '100px';
     header.style.fontSize = '1.1em';
+    headermobile.style.fontSize = '1.1em';
     logo.style.width = "10%"
   }
 }
